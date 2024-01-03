@@ -1,10 +1,10 @@
 ---
 lab:
-  title: 04 – MFA e Acesso Condicional
+  title: 02 – MFA e Acesso Condicional
   module: Module 01 - Manage Identity and Access
 ---
 
-# Laboratório 04: MFA e Acesso Condicional
+# Laboratório 02: MFA e acesso condicional
 # Manual de laboratório do aluno
 
 ## Cenário do laboratório
@@ -47,7 +47,7 @@ Neste exercício, você realizará as seguintes tarefas:
 
 #### Tarefa 1: implantar VMs do Azure usando um modelo do Azure Resource Manager
 
-Nesta tarefa, você criará uma máquina virtual usando um modelo do ARM. Esta máquina virtual será usada no último exercício para este laboratório. 
+Nesta tarefa, você criará uma máquina virtual usando um modelo do ARM. Esta máquina virtual será usada no último exercício deste laboratório. 
 
 1. Entre no portal do Azure **`https://portal.azure.com/`**.
 
@@ -57,13 +57,13 @@ Nesta tarefa, você criará uma máquina virtual usando um modelo do ARM. Esta m
 
     >**Observação**: você também pode selecionar **Implantação de modelo (implantar usando modelos personalizados)** na lista do **Marketplace** .
 
-3. Na folha **Implantação personalizada**, clique na opção **Criar seu modelo no editor**.
+3. No painel **Implantação personalizada**, clique na opção **Criar seu próprio modelo no editor**.
 
 4. No painel **Editar modelo**, clique em **Carregar arquivo**, localize o arquivo **\\Allfiles\\Labs\\04\\az-500-04_azuredeploy.json** e clique em **Abrir**.
 
     >**Observação**: revise o conteúdo do modelo e observe que ele implanta uma VM do Azure que hospeda o Windows Server 2019 Datacenter.
 
-5. Na folha **Editar modelo**, clique em **Salvar**.
+5. No painel **Editar modelo**, clique em **Salvar**.
 
 6. De volta ao painel **Implantação personalizada**, clique em **Editar parâmetros**.
 
@@ -73,7 +73,7 @@ Nesta tarefa, você criará uma máquina virtual usando um modelo do ARM. Esta m
 
 8. No painel **Editar parâmetros**, clique em **Salvar**.
 
-9. Na folha **Implantação personalizada**, verifique se as seguintes configurações estão definidas (deixe outras com os valores padrão):
+9. No painel **Implantação personalizada**, verifique se as seguintes configurações estão definidas (deixe outras com os valores padrão):
 
    >**Observação**: você precisará criar uma senha exclusiva que será usada para criar VMs (máquinas virtuais) para o restante do curso. A senha deve ter pelo menos 12 caracteres e atender aos requisitos de complexidade definidos (a senha deve ter três destes itens: um caractere minúsculo, um caractere maiúsculo, um número e um caractere especial). [Requisitos de senha da VM](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/faq#what-are-the-password-requirements-when-creating-a-vm-). Anote a senha.
 
