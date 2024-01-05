@@ -83,7 +83,7 @@ Nesta tarefa, você criará o grupo de *Administradores Seniores*, adicionará a
    |---|---|
    |Tipo de grupo|**Segurança**|
    |Nome do grupo|**Administradores Seniores**|
-   |Tipo de associação|**Atribuído**|
+   |Tipo de afiliação|**Atribuído**|
     
 4. Selecione o link **Nenhum proprietário selecionado**, na folha **Adicionar proprietários**, selecione **Joseph Price** e clique em **Selecionar**.
 
