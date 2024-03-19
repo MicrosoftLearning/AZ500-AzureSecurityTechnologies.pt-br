@@ -138,7 +138,7 @@ Nesta tarefa, você criará uma conta de usuário para Isabel Garcia usando o Po
 7. Na sessão do PowerShell no painel Cloud Shell, execute o seguinte para criar uma conta de usuário para Isabel Garcia: 
 
     ```powershell
-    New-MgUser -DisplayName 'Isabel Garcia' -PasswordProfile $passwordProfile -UserPrincipalName "Isabel@$domainName" -AccountEnabled $true -MailNickName 'Isabel'
+    New-MgUser -DisplayName 'Isabel Garcia' -PasswordProfile $passwordProfile -UserPrincipalName "Isabel@$domainName" -AccountEnabled -MailNickName 'Isabel'
     ```
 
 8. Na sessão do PowerShell no painel Cloud Shell, execute o seguinte para listar os usuários do Microsoft Entra ID (as contas de Joseph e Isabel devem aparecer na lista): 
