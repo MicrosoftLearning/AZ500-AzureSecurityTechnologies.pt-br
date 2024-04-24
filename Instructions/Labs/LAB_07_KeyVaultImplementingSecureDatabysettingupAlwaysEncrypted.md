@@ -355,12 +355,13 @@ Nesta tarefa, você se conectará ao Banco de dados SQL com o SQL Server Managem
     |Nome de Usuário|**Aluno**|
     |Senha|**Use sua senha pessoal criada no Laboratório 02 > Exercício 1 > Tarefa 1 > Etapa 9.**|
     
-
     >**Observação**: aguarde até que a sessão da Área de Trabalho Remota e o **Gerenciador do Servidor** sejam carregados. Feche o Gerenciador de Servidores. 
 
-    >**Observação**: as etapas restantes neste laboratório são executadas na sessão da Área de Trabalho Remota para a VM do Azure **az500-10-vm1**. 
+    >**Observação**: as etapas restantes neste laboratório são executadas na sessão da Área de Trabalho Remota para a VM do Azure **az500-10-vm1**.
 
-7. Clique em **Iniciar**. No menu **Iniciar**, expanda a pasta **Microsoft SQL Server Tools 19** e selecione o item de menu **Micosoft SQL Server Management Studio**.
+6. Instale o [SQL Server Management Studio](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?preserve-view=true&view=sql-server-2017) em **az500-10-vm1.** VM do Azure.
+ 
+7. Abra o **SQL Server Management Studio**.
 
 8. Na caixa de diálogo **Conectar ao servidor**, especifique as seguintes configurações: 
 
@@ -372,14 +373,13 @@ Nesta tarefa, você se conectará ao Banco de dados SQL com o SQL Server Managem
     |Nome de Usuário|**Aluno**|
     |Senha|**Use sua senha pessoal criada no Laboratório 02 > Exercício 2 > Tarefa 1 > Etapa 3.**|
 
+9. Na caixa de diálogo **Conectar ao Servidor**, selecione **Conectar**.
 
-10. Na caixa de diálogo **Conectar ao Servidor**, selecione **Conectar**.
+10. No console do **SQL Server Management Studio**, no painel **Pesquisador de Objetos**, expanda a pasta **Bancos de Dados**.
 
-11. No console do **SQL Server Management Studio**, no painel **Pesquisador de Objetos**, expanda a pasta **Bancos de Dados**.
+11. No painel **Pesquisador de Objetos**, clique com o botão direito do mouse no banco de dados **medical** e selecione  **Nova consulta**.
 
-12. No painel **Pesquisador de Objetos**, clique com o botão direito do mouse no banco de dados **medical** e selecione  **Nova consulta**.
-
-13. Cole o código a seguir na janela de consulta e selecione **Executar**. Isso criará uma tabela de **Pacientes**.
+12. Cole o código a seguir na janela de consulta e selecione **Executar**. Isso criará uma tabela de **Pacientes**.
 
      ```sql
      CREATE TABLE [dbo].[Patients](
@@ -395,25 +395,25 @@ Nesta tarefa, você se conectará ao Banco de dados SQL com o SQL Server Managem
         [BirthDate] [date] NOT NULL 
      PRIMARY KEY CLUSTERED ([PatientId] ASC) ON [PRIMARY] );
      ```
-14. Depois que a tabela for criada, no painel **Pesquisador de Objetos**, expanda o nó do banco de dados **medical**, o nó das **tabelas**, clique com o botão direito do mouse no nó **dbo.Patients** e clique em **Criptografar colunas**. 
+13. Depois que a tabela for criada, no painel **Pesquisador de Objetos**, expanda o nó do banco de dados **medical**, o nó das **tabelas**, clique com o botão direito do mouse no nó **dbo.Patients** e clique em **Criptografar colunas**. 
 
     >**Observação**: isso iniciará o assistente **Always Encrypted**.
 
-15. Na página **Introdução** clique em **Avançar**.
+14. Na página **Introdução** clique em **Avançar**.
 
-16. Na página **Seleção de coluna**, selecione as colunas **SSN** e **Data de nascimento**, defina o **Tipo de criptografia** da coluna **SSN** como **Determinístico** e da coluna **Data de nascimento** como **Randomizado** e clique em **Avançar**.
+15. Na página **Seleção de coluna**, selecione as colunas **SSN** e **Data de nascimento**, defina o **Tipo de criptografia** da coluna **SSN** como **Determinístico** e da coluna **Data de nascimento** como **Randomizado** e clique em **Avançar**.
 
     >**Observação**: ao executar a criptografia, se algum erro gerado como **Uma exceção foi gerada pelo destino de uma invocação** relacionada a **Rotary(Microsoft.SQLServer.Management.ServiceManagement)**, verifique se os valores da **Permissão de chave** de **Operações de Política de Rotação** estão **desmarcados**. Se não estiver no portal do Azure, navegue até as **Key Vault** >> **Políticas de acesso** >> **Permissões de chave** >> Desmarque todos os valores em **Operações de política de rotação** >> Em **Operações de chave privilegiada** >> Desmarque **Liberar**.
 
-17. Na página **Configuração de chave mestra**, selecione **Azure Key Vault**, clique em **Entrar** quando solicitado, autentique-se usando a mesma conta de usuário usada para provisionar a instância do Azure Key Vault anteriormente neste laboratório, verifique se esse Key Vault aparece na lista suspensa **Selecionar um Azure Key Vault** e clique em **Avançar**.
+16. Na página **Configuração de chave mestra**, selecione **Azure Key Vault**, clique em **Entrar** quando solicitado, autentique-se usando a mesma conta de usuário usada para provisionar a instância do Azure Key Vault anteriormente neste laboratório, verifique se esse Key Vault aparece na lista suspensa **Selecionar um Azure Key Vault** e clique em **Avançar**.
 
-18. Na página **Configurações de execução**, clique em **Avançar**.
+17. Na página **Configurações de execução**, clique em **Avançar**.
     
-19. Na página **Resumo**, clique em **Concluir** para prosseguir com a criptografia. Quando solicitado, entre novamente usando a mesma conta de usuário usada para provisionar a instância do Azure Key Vault anteriormente neste laboratório.
+18. Na página **Resumo**, clique em **Concluir** para prosseguir com a criptografia. Quando solicitado, entre novamente usando a mesma conta de usuário usada para provisionar a instância do Azure Key Vault anteriormente neste laboratório.
 
-20. Quando o processo de criptografia estiver concluído, na página **Resultados**, clique em **Fechar**.
+19. Quando o processo de criptografia estiver concluído, na página **Resultados**, clique em **Fechar**.
 
-21. No console do **SQL Server Management Studio**, no painel **Pesquisador de Objetos**, no nó **médico**, expanda os subnós **Segurança** e **Chaves do Always Encrypted**. 
+20. No console do **SQL Server Management Studio**, no painel **Pesquisador de Objetos**, no nó **médico**, expanda os subnós **Segurança** e **Chaves do Always Encrypted**. 
 
     >**Observação**: o subnó **Chaves do Always Encrypted** contém as subpastas **Chaves Mestras de Coluna** e **Chaves de Criptografia de Coluna**.
 

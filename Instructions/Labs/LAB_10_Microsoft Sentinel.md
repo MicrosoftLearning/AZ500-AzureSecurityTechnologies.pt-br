@@ -240,7 +240,7 @@ Nesta tarefa, você criará um guia estratégico. Um guia estratégico de segura
 
 3. No painel **Proteções de carga de trabalho ** do \| Microsoft Defender par Nuvem, role para baixo e clique no bloco **Acesso à VM just-in-time** em **Proteção avançada**.
 
-4. No painel **Acesso à VM just-in-time**, no lado direito da linha que faz referência à máquina virtual **myVM**, clique no **botão de reticências (...)**, clique em **Remover** e, em seguida, clique em **Sim**.
+4. Na folha **Acesso just-in-time a VM**, no lado direito da linha que faz referência à máquina virtual **myVM**, clique no botão de **reticências (...)**, selecione **Remover** e, em seguida, confirme clicando em **Sim**.
 
     >**Observação:** se a VM não estiver listada nas **VMs Just-in-time**, navegue até o painel **Máquina Virtual** e clique na opção **Configuração**, Clique na opção **Habilitar as VMs Just-in-time** no **acesso da VM Just-in-time**. Repita a etapa acima para navegar de volta para o **Microsoft Defender para Nuvem** e atualizar a página, a VM aparecerá.
 
