@@ -78,6 +78,7 @@ Nesta tarefa, você criará uma máquina virtual usando um modelo do ARM. Esta m
    |Assinatura|o nome da assinatura do Azure que você usará neste laboratório|
    |Grupo de recursos|clique em **Criar novo** e digite o nome **AZ500LAB08**|
    |Location|**(EUA) Leste dos EUA**|
+   |adminPassword|Uma senha segura de sua própria escolha para as máquinas virtuais. Lembre-se da senha. Você precisará dele mais tarde para se conectar às VMs.|
 
     >**Observação**: para identificar as regiões do Azure onde você pode provisionar VMs do Azure, consulte [**https://azure.microsoft.com/en-us/regions/offers/**](https://azure.microsoft.com/en-us/regions/offers/)
 
@@ -271,7 +272,7 @@ Nessa tarefa, você testará o firewall para confirmar se ele está funcionando 
    |Configuração|Valor|
    |---|---|
    |Nome de usuário|**localadmin**|
-   |Senha|**Pa55w.rd1234**|
+   |Senha|A senha segura escolhida durante a implantação do modelo personalizado na tarefa 1 etapa 6.|
 
     >**Observação**: as etapas a seguir são executadas na sessão de Área de Trabalho Remota para a VM do Azure **Srv-Jump**. 
 
@@ -288,7 +289,7 @@ Nessa tarefa, você testará o firewall para confirmar se ele está funcionando 
    |Configuração|Valor|
    |---|---|
    |Nome de usuário|**localadmin**|
-   |Senha|**Pa55w.rd1234**|
+   |Senha|A senha segura escolhida durante a implantação do modelo personalizado na tarefa 1 etapa 6.|
 
     >**Observação**: aguarde até que a sessão de Área de Trabalho Remota seja estabelecida e a interface do Gerenciador do Servidor seja carregada.
 
