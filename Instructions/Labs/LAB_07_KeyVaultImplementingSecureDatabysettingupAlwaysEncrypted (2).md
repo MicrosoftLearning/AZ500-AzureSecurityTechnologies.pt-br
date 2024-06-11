@@ -105,7 +105,11 @@ Nesta tarefa, você criará um recurso do Azure Key Vault. Você também configu
 3. Na sessão do PowerShell no painel Cloud Shell, execute o seguinte para criar um Azure Key Vault no grupo de recursos **AZ500LAB10**. (Se você escolheu outro nome para o grupo de recursos deste laboratório na Tarefa 1, use esse nome para essa tarefa também). O nome do Key Vault precisa ser exclusivo. Guarde o nome que você escolheu. Você vai precisar dele durante este laboratório.  
 
     ```powershell
-    New-AzKeyVault -VaultName $kvName -ResourceGroupName 'AZ500LAB10-lod41132372' -Location $location -DisableRbacAuthorization
+    $kvName = 'az500kv' + $(Get-Random)
+
+    $location = (Get-AzResourceGroup -ResourceGroupName 'AZ500LAB10').Location
+
+    New-AzKeyVault -VaultName $kvName -ResourceGroupName 'AZ500LAB10' -Location $location
     ```
 
     >**Observação**: a saída do último comando exibirá o nome e o URI do cofre. O URI do cofre está no formato `https://<vault_name>.vault.azure.net/`

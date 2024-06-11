@@ -94,7 +94,7 @@ Nesta tarefa, você criará outra sub-rede e habilitará um ponto de extremidade
     |---|---|
     |Nome da sub-rede|**Privado**|
     |Intervalo de endereços da sub-rede|**10.0.1.0/24**|
-    |Pontos de extremidade de serviço|**Microsoft.Storage**|
+    |Pontos de extremidade de serviço|**Deixe o padrão Nenhum**|
 
 6. No painel **Adicionar sub-rede**, clique em **Salvar** para adicionar a nova sub-rede.
 
