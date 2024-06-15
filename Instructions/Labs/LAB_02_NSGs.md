@@ -243,7 +243,7 @@ Nesta tarefa, você criará uma máquina virtual para usar como um servidor de g
    |Imagem|**Windows Server 2022 Datacenter: Azure Edition - x64 Gen2**|
    |Tamanho|**Standard D2s v3**|
    |Nome de Usuário|**Aluno**|
-   |Senha|**Use sua senha pessoal criada no Laboratório 02 > Exercício 2 > Tarefa 1 > Etapa 3.**|
+   |Senha|**Use sua senha pessoal criada no Laboratório 02 > Exercício 2 > Tarefa 1 > Etapa 3.**|
    |Porta de entrada públicas|**Nenhuma**|
    |Já tem uma licença do Windows Server|**Não**|
 
@@ -300,11 +300,11 @@ Nesta tarefa, você testará os filtros de tráfego de rede. Você deve poder ex
 
     >**Observação**: verifique se a conexão da Área de Trabalho Remota foi bem-sucedida. Neste ponto, você confirmou que pode se conectar via Área de Trabalho Remota ao myVMMgmt.
 
-4. No portal do Azure, navegue até o painel de máquinas virtuais **myVMWeb**.
+4. No portal do Azure, navegue até a folha de máquina virtual **myVMWeb**.
 
-5. No painel **myVMWeb**, na seção **Payload**, clique em ** Executar comando** e, em seguida, clique em **RunPowerShellScript**.
+5. Na folha **myVMWeb**, na seção **Operações**, clique em **Executar comando** e clique em **RunPowerShellScript**.
 
-6. No painel **Executar Script de Comando**, execute o seguinte para instalar a função de servidor Web em **myVmWeb**:
+6. No painel **Executar Script de Comando**, execute o seguinte comando para instalar a função de servidor Web em **myVmWeb**:
 
     ```powershell
     Install-WindowsFeature -name Web-Server -IncludeManagementTools
