@@ -109,7 +109,7 @@ Nesta tarefa, você criará um recurso do Azure Key Vault. Você também configu
 
     $location = (Get-AzResourceGroup -ResourceGroupName 'AZ500LAB10').Location
 
-    New-AzKeyVault -VaultName $kvName -ResourceGroupName 'AZ500LAB10' -Location $location
+    New-AzKeyVault -VaultName $kvName -ResourceGroupName 'AZ500LAB10' -Location $location -DisableRbacAuthorization
     ```
 
     >**Observação**: a saída do último comando exibirá o nome e o URI do cofre. O URI do cofre está no formato `https://<vault_name>.vault.azure.net/`
