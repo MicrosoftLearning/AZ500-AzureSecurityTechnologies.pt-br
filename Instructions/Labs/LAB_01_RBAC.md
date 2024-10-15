@@ -120,35 +120,31 @@ Nesta tarefa, você criará uma conta de usuário para Isabel Garcia usando o Po
 
 4. Na sessão do PowerShell no painel Cloud Shell, execute o seguinte para definir o valor da senha dentro do objeto de perfil:
     ```powershell
-    $PasswordProfile = @{
-      Password = 'Helo123!'
-      ForceChangePasswordNextSignIn = $true
-      ForceChangePasswordNextSignInWithMfa = $true
-    }
+    $passwordProfile.Password = "Pa55w.rd1234"
     ```
 
 5. Na sessão do PowerShell no painel Cloud Shell, execute o seguinte para se conectar ao Microsoft Entra ID:
 
     ```powershell
-    Connect-MgGraph -Scopes "User.ReadWrite.All", "Group.ReadWrite.All", "AuditLog.Read.All", "RoleManagement.Read.Directory"
+    Connect-AzureAD
     ```
       
 6. Na sessão do PowerShell no painel Cloud Shell, execute o seguinte para identificar o nome do locatário do Microsoft Entra: 
 
     ```powershell
-    $domainName = ((Get-MgOrganization).VerifiedDomains)[0].Name
+    $domainName = ((Get-AzureAdTenantDetail).VerifiedDomains)[0].Name
     ```
 
 7. Na sessão do PowerShell no painel Cloud Shell, execute o seguinte para criar uma conta de usuário para Isabel Garcia: 
 
     ```powershell
-    New-MgUser -DisplayName 'Isabel Garcia' -PasswordProfile $passwordProfile -UserPrincipalName "Isabel@$domainName" -MailNickName 'Isabel' -AccountEnabled
+    New-AzureADUser -DisplayName 'Isabel Garcia' -PasswordProfile $passwordProfile -UserPrincipalName "Isabel@$domainName" -AccountEnabled $true -MailNickName 'Isabel'
     ```
 
 8. Na sessão do PowerShell no painel Cloud Shell, execute o seguinte para listar os usuários do Microsoft Entra ID (as contas de Joseph e Isabel devem aparecer na lista): 
 
     ```powershell
-    Get-MgUser 
+    Get-AzureADUser -All $true | Where-Object {$_.UserPrincipalName -like "*43846135@LOD*"} 
     ```
 
 #### Tarefa2: use o PowerShell para criar o grupo Administradores Juniores e adicionar a conta de usuário de Isabel Garcia ao grupo.
@@ -158,38 +154,32 @@ Nesta tarefa, você criará o grupo Administradores Juniores e adicionará a con
 1. Na mesma sessão do PowerShell no painel do Cloud Shell, execute o seguinte para **criar um grupo de segurança** chamado Administradores Juniores:
    
    ```powershell
-   New-MgGroup -DisplayName "Junior Admins" -MailEnabled:$false -SecurityEnabled:$true -MailNickName JuniorAdmins
+   New-AzureADGroup -DisplayName 'Junior Admins43846135' -MailEnabled $false -SecurityEnabled $true -MailNickName JuniorAdmins
    ```
    
 2. Na sessão do PowerShell no painel do Cloud Shell, execute o seguinte para **listar os grupos** no seu locatário do Microsoft Entra (a lista deve incluir os grupos Administradores Seniores e Administradores Juniores)
    
    ```powershell
-   Get-MgGroup
+   Get-AzureADGroup
    ```
 
 3. Na sessão do PowerShell no painel do Cloud Shell, execute o seguinte para **obter uma referência** à conta de usuário de Mila Moraes:
 
    ```powershell
-   $user =Get-MgUser -Filter "MailNickName eq 'Isabel'"
+   $user = Get-AzureADUser -Filter "UserPrincipalName eq 'Isabel-43846135@LODSPRODMCA.onmicrosoft.com'"
    ```
 
-4. Na sessão do PowerShell no painel do Cloud Shell, execute o seguinte para **obter uma referência** ao grupo Administradores Juniores:
+4. Na sessão do PowerShell no painel do Cloud Shell, execute o seguinte para adicionar a conta de usuário de Isabel ao grupo Administradores Juniores43846135:
    ```powershell
-   $targetGroup = Get-MgGroup -ConsistencyLevel eventual -Search '"DisplayName:Junior Admins"'
+   Add-AzADGroupMember -MemberUserPrincipalName $user.userPrincipalName -TargetGroupDisplayName "Junior Admins43846135"
    ```
 
-5. Na sessão do PowerShell no painel do Cloud Shell, execute o seguinte para **adicionar a conta de usuário de Mila** ao grupo Administradores Juniores:
+5. Na sessão do PowerShell no painel do Cloud Shell, execute o seguinte para verificar se o grupo Administradores Juniores43846135 contém a conta de usuário de Mila:
    
    ```powershell
-    New-MgGroupMember -DirectoryObjectId $user.id -GroupId $targetGroup.id
+    Get-AzADGroupMember -GroupDisplayName "Junior Admins43846135"
     ```
    
-5. Na sessão do PowerShell no painel do Cloud Shell, execute o seguinte para **verificar** se o grupo Administradores Juniores contém a conta de usuário de Mila:
-   
-    ```powershell
-    Get-MgGroupMember -GroupId $targetGroup.id
-    ```
- 
 > Resultado: você usou o PowerShell para criar uma conta de usuário, uma conta de grupo e adicionar a conta de usuário à conta de grupo. 
 
 ### Exercício 3: criar um grupo de Central de Serviços incluindo a conta de usuário de Dylan Williams como membro.

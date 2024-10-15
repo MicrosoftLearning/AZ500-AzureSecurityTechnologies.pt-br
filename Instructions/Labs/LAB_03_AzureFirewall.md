@@ -245,7 +245,7 @@ Nesta tarefa, você configurará os endereços DNS primário e secundário para 
 
 2. No painel **AZ500LAB08**, na lista de recursos, clique na máquina virtual **Srv-Work**.
 
-3. No painel **Srv-Work**, na seção **Configurações**, clique em **Rede**.
+3. Na folha **Srv-Work**, clique em **Rede**.
 
 4. No painel **Srv-Work \| Rede**, clique no link ao lado da entrada **Adaptador de rede**.
 
