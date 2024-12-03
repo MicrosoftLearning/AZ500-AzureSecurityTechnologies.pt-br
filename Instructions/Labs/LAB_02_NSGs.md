@@ -202,6 +202,8 @@ Nesta tarefa, você criará uma máquina virtual para usar como um servidor Web.
    |Grupo de recursos|**AZ500LAB07**|
    |Nome da máquina virtual|**myVmWeb**|
    |Region|**(EUA) Leste dos EUA**|
+   |Opções de disponibilidade|**Nenhuma redundância de infraestrutura necessária**
+   |Tipo de segurança|**Standard**
    |Imagem|**Windows Server 2022 Datacenter: Azure Edition- x64 Gen2**|
    |Tamanho|**Standard D2s v3**|
    |Nome de Usuário|**Aluno**|
@@ -212,19 +214,19 @@ Nesta tarefa, você criará uma máquina virtual para usar como um servidor Web.
 
     >**Observação**: para portas de entrada públicas, dependeremos do NSG pré-criado. 
 
-4. Clique em **Avançar: Discos >** e, na guia **Discos** do painel **Criar uma máquina virtual**, defina o **Tipo de disco do sistema operacional** para **HDD Standard** e clique em **Avançar: Rede >**.
+5. Clique em **Avançar: Discos >** e, na guia **Discos** do painel **Criar uma máquina virtual**, defina o **Tipo de disco do sistema operacional** para **HDD Standard** e clique em **Avançar: Rede >**.
 
-5. Na guia **Rede** do painel **Criar uma máquina virtual**, selecione a rede **myVirtualNetwork** criada anteriormente.
+6. Na guia **Rede** do painel **Criar uma máquina virtual**, selecione a rede **myVirtualNetwork** criada anteriormente.
 
-6. Em **Grupo de segurança de rede da NIC**, selecione **Nenhum**.
+7. Em **Grupo de segurança de rede da NIC**, selecione **Nenhum**.
 
-7. Clique em **Avançar: Gerenciamento >** e clique em **Avançar: Monitoramento >**. Na guia **Monitoramento** do painel **Criar uma máquina virtual**, verifique a seguinte configuração:
+8. Clique em **Avançar: Gerenciamento >** e clique em **Avançar: Monitoramento >**. Na guia **Monitoramento** do painel **Criar uma máquina virtual**, verifique a seguinte configuração:
 
    |Configuração|Valor|
    |---|---|
    |Diagnóstico de inicialização|**Habilitado com a conta de armazenamento gerenciada (recomendado)**|
 
-8. Clique em **Revisar + criar**, no painel **Revisar + criar**, verifique se a validação foi bem-sucedida e clique em **Criar**.
+9. Clique em **Revisar + criar**, no painel **Revisar + criar**, verifique se a validação foi bem-sucedida e clique em **Criar**.
 
 #### Tarefa 2: criar uma máquina virtual para usar como um servidor de gerenciamento. 
 
