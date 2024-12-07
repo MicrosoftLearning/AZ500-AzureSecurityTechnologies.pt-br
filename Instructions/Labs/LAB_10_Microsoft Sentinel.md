@@ -48,7 +48,7 @@ Neste exercício, você realizará as seguintes tarefas:
 - Tarefa 5: criar um alerta personalizado e configurar o guia estratégico como uma resposta automatizada.
 - Tarefa 6: invocar um incidente e analisar as ações associadas.
 
-#### Tarefa 1: integração do Azure Sentinel
+#### Tarefa 1: integração do Microsoft Sentinel
 
 Nesta tarefa, você integrará o Microsoft Sentinel e conectará o workspace do Log Analytics. 
 
@@ -64,7 +64,7 @@ Nesta tarefa, você integrará o Microsoft Sentinel e conectará o workspace do 
 
 4. No painel **Adicionar Microsoft Sentinel a um espaço de trabalho**, selecione o espaço de trabalho do Log Analytics criado no laboratório do Azure Monitor e clique em **Adicionar**.
 
-    >**Observação**: o Microsoft Sentinel tem requisitos muito específicos para espaços de trabalho. Por exemplo, espaços de trabalho criados pelo Microsoft Defender para Nuvem não podem ser usados. Leia mais em [Início rápido: integração do Azure Sentinel](https://docs.microsoft.com/en-us/azure/sentinel/quickstart-onboard)
+    >**Observação**: o Microsoft Sentinel tem requisitos muito específicos para espaços de trabalho. Por exemplo, espaços de trabalho criados pelo Microsoft Defender para Nuvem não podem ser usados. Leia mais sobre em [Início rápido: integração do Microsoft Sentinel](https://docs.microsoft.com/en-us/microsoft/sentinel/quickstart-onboard)
     
 #### Tarefa 2: configurar o Microsoft Sentinel para usar o conector de dados de Atividade do Azure. 
 
