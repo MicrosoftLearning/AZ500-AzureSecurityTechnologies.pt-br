@@ -11,7 +11,7 @@ lab:
 
 Você foi solicitado a criar uma prova de conceito do Microsoft Defender para o ambiente baseado em nuvem. Você precisa especificamente:
 
-- Configure o Microsoft Defender para Nuvem para monitorar uma máquina virtual.
+- Configure os recursos de segurança aprimorados para servidores do Microsoft Defender para Nuvem para monitorar uma máquina virtual.
 - Revise as recomendações do Microsoft Defender para Nuvem para uma máquina virtual.
 - Implemente as recomendações para configuração de convidado e acesso Just-in-time à VM. 
 - Analise como a Classificação de Segurança pode ser usado para determinar o progresso na criação de uma infraestrutura mais segura.
@@ -38,35 +38,23 @@ Neste exercício, você realizará as seguintes tarefas:
 - Tarefa 2: revisar as recomendações do Microsoft Defender para Nuvem
 - Tarefa 3: implementar a recomendação do Microsoft Defender para Nuvem para habilitar o Acesso just-in-time à VM
 
-#### Tarefa 1: configurar o Microsoft Defender para Nuvem
+#### Tarefa 1: Configurar recursos de segurança aprimorados para servidores do Microsoft Defender para Nuvem
 
-Nesta tarefa, você vai integrar e configurar o Microsoft Defender para Nuvem.
+Nesta tarefa, você vai integrar e configurar o recursos de segurança aprimorados para servidores do Microsoft Defender para Nuvem.
 
-1. Entre no portal do Azure **`https://portal.azure.com/`**.
+1. Inicie uma sessão no navegador e entre na [assinatura do Azure](https://azure.microsoft.com/en-us/free/?azure-portal=true). na qual você tem acesso administrativo.
 
-    >**Observação**: entre no portal do Azure usando uma conta que tenha a função Proprietário ou Colaborador na assinatura do Azure que você está usando para este laboratório.
+2. Na caixa de texto Pesquisar recursos, serviços e documentos na parte superior da página do portal do Azure, digite Microsoft Defender para Nuvem e pressione a tecla Enter.
 
-2. No portal do Azure, na caixa de texto **Pesquisar recursos, serviços e documentos** na parte superior da página do portal do Azure, digite **Microsoft Defender para Nuvem** e pressione a tecla **Enter**.
+3. Na folha Gerenciamento do Microsoft Defender para Nuvem, acesse Configurações de ambiente. Expanda as pastas de configurações do ambiente até que a seção assinatura seja exibida e clique na assinatura para exibir os detalhes.
 
-3. No menu de navegação esquerdo, clique em **Introdução**. No painel **Microsoft Defender para Nuvem \| Introdução**, clique em **Fazer upgrade**.
-     
-4. No painel **Microsoft Defender para Nuvem \| Introdução**, na guia Instalar agentes, role para baixo e clique em **Instalar agentes**. 
+4. Na folha Configurações, em Planos do Defender, expanda CWP (Proteção de Carga de Trabalho na Nuvem).
+  
+5. Na lista Plano de CWP (Proteção de Carga de Trabalho na Nuvem), selecione Servidores. No lado direito da página, altere o Status de Desativado para Ativado e clique em Salvar.
+  
+6. Para examinar os detalhes do Plano 2 do Microsoft Defender para Servidores, escolha Alterar plano >.
 
-5. No painel **Microsoft Defender para Nuvem \| Introdução**, na guia **Fazer upgrade** >> role para baixo até a seção **Selecionar espaços de trabalho com recursos de segurança aprimorados** ser exibida >> ative o **plano do Microsoft Defender** selecionando seu Workspace do Log Analytics e, em seguida, clique no botão grande azul de Upgrade.  
-
-    >**Observação**: revise todos os recursos disponíveis como parte dos planos do Microsoft Defender. 
-
-6. Navegue até **Microsoft Defender para Nuvem** e, no painel de navegação esquerdo, na seção Gerenciamento, clique em **Configurações do ambiente**.
-
-7. No painel **Microsoft Defender para Nuvem \| Configurações de ambiente**, role para baixo, expanda até a assinatura ser exibida e clique na assinatura relevante. 
-
-8. No painel **Configurações \| Planos do Defender**, selecione **Habilitar todos os planos** e, se necessário, clique em **Salvar**.
-
-9. Navegue de volta para a folha de **configurações de ambiente do Microsoft Defender para Nuvem \|**, expanda até que sua assinatura seja exibida e clique na entrada que representa o Workspace do Log Analytics criado no laboratório anterior.
-
-10. Na folha **Configurações \| Planos do Defender**, verifique se todas as opções estão "Ativadas". Se necessário, clique em **Habilitar todos os planos** e, em seguida, clique em **Salvar**.
-
-11. Selecione **Coleta de dados** no painel **Configurações \| Planos do Defender**. Clique em **Todos os Eventos** e **Salvar**.
+>**Observação**: habilitar o plano de Servidores de CWP (Proteção de Carga de Trabalho na Nuvem) de Desativado para Ativado habilita o Plano 2 do Microsoft Defender para servidores.
 
 #### Tarefa 2: revise as recomendações do Microsoft Defender para Nuvem
 
