@@ -23,7 +23,7 @@ Neste laboratório, você completará os seguintes exercícios:
 - Exercício 1: implantar uma máquina virtual do Azure
 - Exercício 2: criar um workspace do Log Analytics
 - Exercício 3: criar uma conta de armazenamento do Azure
-- Exercício 4: criar uma regra de coleta de dados.
+- Exercício 4: criar uma regra de coleta de dados
   
 ## Instruções
 

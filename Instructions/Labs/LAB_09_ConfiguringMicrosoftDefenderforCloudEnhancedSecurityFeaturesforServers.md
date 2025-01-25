@@ -14,13 +14,13 @@ Como engenheiro de segurança do Azure para uma empresa global de comércio elet
 
 ## Objetivos do laboratório
 
-- Configurar Recursos de Segurança aprimorados para Servidores do Microsoft Defender para Nuvem
+- Configurar recursos de segurança aprimorada do Microsoft Defender para Nuvem para servidores
   
 - Examine os recursos de segurança aprimorados do Plano 2 do Microsoft Defender para Servidores
 
 ## Instruções para o exercício
 
-### Configurar Recursos de Segurança aprimorados para Servidores do Microsoft Defender para Nuvem
+### Configurar recursos de segurança aprimorada do Microsoft Defender para Nuvem para servidores
 
 1. Na caixa de texto Pesquisar recursos, serviços e documentos na parte superior da página do portal do Azure, digite **Microsoft Defender para Nuvem** e pressione a tecla **Enter**.
 
