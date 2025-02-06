@@ -10,7 +10,7 @@ lab:
 
 ## Cenário do laboratório
 
-Como Engenheiro de Segurança do Azure para uma empresa de tecnologia financeira, você tem a tarefa de aprimorar o monitoramento e a visibilidade de segurança em todas as VMs (máquinas virtuais) do Azure usadas para processar transações financeiras e gerenciar dados confidenciais do cliente. A equipe de segurança precisa de logs detalhados e métricas de desempenho dessas VMs para detectar possíveis ameaças e otimizar o desempenho do sistema. O CISO (diretor de segurança de informação) pediu que você implementasse uma solução que coletasse eventos de segurança, logs do sistema e contadores de desempenho. Você ficou responsável por configurar o AMA (Agente do Azure Monitor) e as DCRs (Regras de Coleta de Dados) para centralizar a coleta de logs e o monitoramento de desempenho.
+Como Engenheiro de Segurança do Azure para uma empresa de tecnologia financeira, você tem a tarefa de aprimorar o monitoramento e a visibilidade de segurança nas VMs (máquinas virtuais) do Azure usadas para processar transações financeiras e gerenciar dados confidenciais do cliente. A equipe de segurança requer logs detalhados e métricas de desempenho dessas VMs para detectar possíveis ameaças e otimizar o desempenho do sistema. O CISO (diretor de segurança de informação) pediu que você implementasse uma solução que coletasse eventos de segurança, logs do sistema e contadores de desempenho. Você ficou responsável por configurar o AMA (Agente do Azure Monitor) e as DCRs (Regras de Coleta de Dados) para centralizar a coleta de logs e o monitoramento de desempenho.
 
 
 
@@ -51,7 +51,7 @@ Neste exercício, você realizará as seguintes tarefas:
     New-AzResourceGroup -Name AZ500LAB131415 -Location 'EastUS'
     ```
 
-    >**Observação**: este grupo de recursos será usado para os laboratórios 8, 9 e 10.
+    >**Observação**: este grupo de recursos será usado nos laboratórios 8, 9 e 10.
 
 5. Na sessão do PowerShell no painel do Cloud Shell, execute o seguinte para habilitar a criptografia no host (EAH)
    
@@ -165,7 +165,7 @@ Nesta tarefa, você criará uma regra de coleta de dados.
   ![imagem](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/d43e8f94-efb2-4255-9320-210c976fd45e)
 
 
-3. Clique no botão **Criar** para criar uma nova regra de coleta de dados.
+3. Clique no botão **+ Criar** para criar uma nova regra de coleta de dados.
 
 4. Na guia **Noções Básicas** da folha **Criar Regra de Coleta de Dados**, especifique as seguintes configurações:
   
