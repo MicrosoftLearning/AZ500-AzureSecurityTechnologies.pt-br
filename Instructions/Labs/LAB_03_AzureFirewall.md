@@ -94,7 +94,7 @@ Nesta tarefa, você implantará o Firewall do Azure na rede virtual.
 
 2. No painel **Firewall**, clique em **+ Criar**.
 
-3. Na guia **Noções básicas** do painel **Criar um firewall**, especifique as seguintes configurações (deixe outras com seus valores padrão):
+3. Na guia **Noções básicas** da folha **Criar um firewall**, especifique as seguintes configurações: 
 
    |Configuração|Valor|
    |---|---|
@@ -104,21 +104,22 @@ Nesta tarefa, você implantará o Firewall do Azure na rede virtual.
    |SKU do Firewall|**Standard**|
    |Gerenciamento do firewall|**Use regras de Firewall (clássicas) para gerenciar este firewall**|
    |Escolher uma rede virtual|clique na opção **Usar existente** e, na lista suspensa, selecione **Test-FW-VN**|
+   |NIC de Gerenciamento do Firewall|Para desativar esse recurso, **desmarque** a opção **Ativar NIC de gerenciamento de firewall**.|
    |Endereço IP público|clique em **Adicionar novo** e digite o nome **TEST-FW-PIP** e clique em **OK**|
 
-4. Clique em **Revisar + criar** e em **Criar**. 
+5. Clique em **Revisar + criar** e em **Criar**. 
 
     >**Observação**: aguarde até que a implantação seja concluída. Isso deverá levar cerca de cinco minutos. 
 
-5. No portal do Azure, na caixa de texto ** Pesquisar recursos, serviços e documentos** na parte superior da página do portal do Azure, digite **Grupos de recursos** e pressione a tecla **Enter**.
+6. No portal do Azure, na caixa de texto ** Pesquisar recursos, serviços e documentos** na parte superior da página do portal do Azure, digite **Grupos de recursos** e pressione a tecla **Enter**.
 
-6. No painel **Grupos de recursos**, na lista de grupos de recursos, clique na entrada **AZ500LAB08**.
+7. No painel **Grupos de recursos**, na lista de grupos de recursos, clique na entrada **AZ500LAB08**.
 
     >**Observação**: no painel do grupo de recursos **AZ500LAB08**, revise a lista de recursos. Você pode classificar por **Tipo**.
 
-7. Na lista de recursos, clique na entrada que representa o firewall **Test-FW01**.
+8. Na lista de recursos, clique na entrada que representa o firewall **Test-FW01**.
 
-8. No painel **Test-FW01**, identifique o endereço **IP Privado** que foi atribuído ao firewall. 
+9. No painel **Test-FW01**, identifique o endereço **IP Privado** que foi atribuído ao firewall. 
 
     >**Observação:** essas informações serão necessárias na próxima tarefa.
 
