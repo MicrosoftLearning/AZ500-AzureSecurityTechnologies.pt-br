@@ -106,42 +106,44 @@ Neste exercício, você realizará as seguintes tarefas:
 
 Nesta tarefa, você criará uma conta de usuário para Isabel Garcia usando o PowerShell.
 
-1. No portal do Azure, abra o Cloud Shell clicando no ícone no canto superior direito. Se solicitado, selecione **PowerShell** e **Criar armazenamento**.
+1. **Abra o Cloud Shell** clicando no **ícone do Cloud Shell** no canto superior direito do portal do Azure.
 
-2. Verifique se o **PowerShell** está selecionado no menu suspenso no canto superior esquerdo do painel do Cloud Shell.
+2. **Se solicitado, configure o Cloud Shell criando uma conta de armazenamento**. Isso é necessário **apenas na primeira vez** que você inicia o Cloud Shell.
+
+3. No painel do Cloud Shell, verifique se o **PowerShell** está selecionado no menu suspenso no canto superior esquerdo.
 
    >**Observação**: para colar o texto copiado no Cloud Shell, selecione com o botão direito na janela do painel e selecione **Colar**. Como alternativa, você pode usar a combinação de teclas **Shift+Insert**.
 
-3. Na sessão do PowerShell no painel Cloud Shell, execute o seguinte para criar um objeto de perfil de senha:
+4. Na sessão do PowerShell no painel Cloud Shell, execute o seguinte para criar um objeto de perfil de senha:
 
     ```powershell
     $passwordProfile = New-Object -TypeName Microsoft.Open.AzureAD.Model.PasswordProfile
     ```
 
-4. Na sessão do PowerShell no painel Cloud Shell, execute o seguinte para definir o valor da senha dentro do objeto de perfil:
+5. Na sessão do PowerShell no painel Cloud Shell, execute o seguinte para definir o valor da senha dentro do objeto de perfil:
     ```powershell
     $passwordProfile.Password = "Pa55w.rd1234"
     ```
 
-5. Na sessão do PowerShell no painel Cloud Shell, execute o seguinte para se conectar ao Microsoft Entra ID:
+6. Na sessão do PowerShell no painel Cloud Shell, execute o seguinte para se conectar ao Microsoft Entra ID:
 
     ```powershell
     Connect-AzureAD
     ```
       
-6. Na sessão do PowerShell no painel Cloud Shell, execute o seguinte para identificar o nome do locatário do Microsoft Entra: 
+7. Na sessão do PowerShell no painel Cloud Shell, execute o seguinte para identificar o nome do locatário do Microsoft Entra: 
 
     ```powershell
     $domainName = ((Get-AzureAdTenantDetail).VerifiedDomains)[0].Name
     ```
 
-7. Na sessão do PowerShell no painel Cloud Shell, execute o seguinte para criar uma conta de usuário para Isabel Garcia: 
+8. Na sessão do PowerShell no painel Cloud Shell, execute o seguinte para criar uma conta de usuário para Isabel Garcia: 
 
     ```powershell
     New-AzureADUser -DisplayName 'Isabel Garcia' -PasswordProfile $passwordProfile -UserPrincipalName "Isabel@$domainName" -AccountEnabled $true -MailNickName 'Isabel'
     ```
 
-8. Na sessão do PowerShell no painel Cloud Shell, execute o seguinte para listar os usuários do Microsoft Entra ID (as contas de Joseph e Isabel devem aparecer na lista): 
+9. Na sessão do PowerShell no painel Cloud Shell, execute o seguinte para listar os usuários do Microsoft Entra ID (as contas de Joseph e Isabel devem aparecer na lista): 
 
     ```powershell
     Get-AzureADUser -All $true | Where-Object {$_.UserPrincipalName -like "*43846135@LOD*"} 
@@ -296,7 +298,9 @@ Neste exercício, você realizará as seguintes tarefas:
 
 3. No painel **AZ500Lab01 \| Controle de acesso (IAM)** selecione **+ Adicionar** e, no menu suspenso, selecione **Adicionar atribuição de função**.
 
-4. No painel **Adicionar atribuição de função**, especifique as seguintes configurações e clique em **Avançar** após cada etapa:
+4. Na folha **Adicionar atribuição de função**, especifique as seguintes configurações a seguir antes de clicar em Avançar.
+
+   **Observação:** depois de concluir todas as etapas, clique em **Avançar**.
 
    |Configuração|Valor|
    |---|---|
@@ -304,17 +308,17 @@ Neste exercício, você realizará as seguintes tarefas:
    |Atribuir acesso a (no Painel de Membros)|**Usuário, grupo ou entidade de serviço**|
    |Selecione (+ Selecionar Membros)|**Central de Serviços**|
 
-5. Clique em **Examinar + atribuir** duas vezes para criar a atribuição de função.
+6. Clique em **Examinar + atribuir** duas vezes para criar a atribuição de função.
 
-6. No painel **Controle de acesso (IAM)**, selecione **Atribuições de função**.
+7. No painel **Controle de acesso (IAM)**, selecione **Atribuições de função**.
 
-7. No painel **AZ500Lab01 \| Controle de acesso (IAM)**, na guia **Verificar acesso**, na caixa de texto **Pesquisar por nome ou endereço de e-mail**, digite **Dylan Williams**.
+8. No painel **AZ500Lab01 \| Controle de acesso (IAM)**, na guia **Verificar acesso**, na caixa de texto **Pesquisar por nome ou endereço de e-mail**, digite **Dylan Williams**.
 
-8. Na lista de resultados da pesquisa, selecione a conta de usuário de Dylan Williams e, na folha **Atribuições de Dylan Williams – AZ500Lab01**, visualize a atribuição recém-criada.
+9. Na lista de resultados da pesquisa, selecione a conta de usuário de Dylan Williams e, na folha **Atribuições de Dylan Williams – AZ500Lab01**, visualize a atribuição recém-criada.
 
-9. Feche o painel **atribuições de Dylan Williams – AZ500Lab01**.
+10. Feche o painel **atribuições de Dylan Williams – AZ500Lab01**.
 
-10. Repita as mesmas duas últimas etapas para verificar o acesso de **Joseph Price**. 
+11. Repita as mesmas duas últimas etapas para verificar o acesso de **Joseph Price**. 
 
 > Resultado: você atribuiu e verificou permissões RBAC. 
 
