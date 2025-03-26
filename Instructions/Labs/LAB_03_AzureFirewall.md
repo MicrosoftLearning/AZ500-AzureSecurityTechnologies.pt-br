@@ -164,7 +164,7 @@ Nessa tarefa, você criará uma rota padrão para a sub-rede **Workload-SN**. Es
    |Configuração|Valor|
    |---|---|
    |Nome da rota|**FW-DG**|
-   |Prefixo de endereço de destino|**Endereço IP**|
+   |Tipo de destino|**Endereço IP**|
    |Intervalos de CIDR /endereço IP de destino|**0.0.0.0/0**
    |Tipo do próximo salto|**Solução de virtualização**|
    |Endereço do próximo salto|o endereço IP privado do firewall que você identificou na tarefa anterior|
@@ -248,7 +248,7 @@ Nesta tarefa, você configurará os endereços DNS primário e secundário para 
 
 3. Na folha **Srv-Work**, clique em **Rede**.
 
-4. No painel **Srv-Work \| Rede**, clique no link ao lado da entrada **Adaptador de rede**.
+4. Na folha **Srv-Work \| Configurações de rede**, clique no link ao lado da entrada **Adaptador de rede**.
 
 5. No painel da interface de rede, na seção **Configurações**, clique em **Servidores de DNS**, selecione a opção **Personalizado**, adicione os dois servidores DNS mencionados na regra de rede: **209.244.0.3** e ** 209.244.0.4** e clique em **Salvar** para salvar a alteração.
 

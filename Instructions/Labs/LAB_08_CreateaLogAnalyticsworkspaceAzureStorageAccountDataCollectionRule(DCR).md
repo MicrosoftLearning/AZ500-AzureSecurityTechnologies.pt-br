@@ -70,7 +70,7 @@ Neste exercício, você realizará as seguintes tarefas:
     |Configuração|Valor|
     |---|---|
     |Usuário |**localadmin**|
-    |Senha|**Use sua senha pessoal criada no Laboratório 2 > Exercício 2 > Tarefa 1 > Etapa 3.**|
+    |Senha|**Use sua senha pessoal criada no Laboratório 2 > Exercício 2 > Tarefa 1 > Etapa 3.**|
 
     >**Observação**: aguarde até que a implantação seja concluída. 
 
@@ -146,7 +146,7 @@ Nesta tarefa, você criará uma conta de armazenamento.
 
     >**Observação**: aguarde até a conta de armazenamento ser criada. Isso deverá levar cerca de dois minutos.
 
-### Exercício 3: criar uma regra de coleta de dados
+### Exercício 4: criar uma regra de coleta de dados
 
 ### Tempo estimado: 15 minutos
 

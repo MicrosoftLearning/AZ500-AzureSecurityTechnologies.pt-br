@@ -4,7 +4,7 @@ lab:
   module: Module 03 - Plan and implement security for Azure SQL Database and Azure SQL Managed Instance
 ---
 
-# Laboratório 06: Pontos de extremidade de serviço e proteção do armazenamento
+# Laboratório 06: Pontos de extremidade de serviço e proteção do armazenamento
 # Manual de laboratório do aluno
 
 ## Cenário do laboratório
@@ -295,9 +295,11 @@ Nesta tarefa, você criará uma conta de armazenamento com um compartilhamento d
 
 15. Navegue de volta para o painel da conta de armazenamento e, na seção **Segurança + rede**, clique em **Rede**.
 
-16. No painel **Firewalls e redes virtuais**, selecione a opção **Habilitar de redes virtuais e endereços IP selecionados** e clique no link **+ Adicionar rede virtual existente**. 
+16. Em **Acesso à rede pública**, selecione **Gerenciar** e, como **Ação padrão**, selecione **Habilitar nas redes selecionadas**.
 
-17. No painel **Adicionar redes**, especifique as seguintes configurações:
+17. Na folha **Configurações de recursos: redes virtuais, endereços IP e exceções**, selecione **exibir** e clique no link **+ Adicionar rede virtual existente**. 
+
+18. No painel **Adicionar redes**, especifique as seguintes configurações:
 
     |Configuração|Valor|
     |---|---|
@@ -305,9 +307,9 @@ Nesta tarefa, você criará uma conta de armazenamento com um compartilhamento d
     |Redes virtuais|**myVirtualNetwork**|
     |Sub-redes|**Privado**|
 
-18. No painel **Adicionar redes**, clique em **Adicionar**. 
+19. No painel **Adicionar redes**, clique em **Adicionar**. 
 
-19. De volta ao painel da conta de armazenamento, clique em **Salvar**.
+20. De volta ao painel da conta de armazenamento, clique em **Salvar**.
 
     >**Observação**: neste ponto do laboratório, você configurou uma rede virtual, um grupo de segurança de rede e uma conta de armazenamento com um compartilhamento de arquivo. 
 
@@ -331,7 +333,7 @@ Nesta tarefa, você criará duas máquinas virtuais, uma na sub-rede Privada e o
     |Region|**(EUA) Leste dos EUA**|
     |Imagem|**Windows Server 2022 Datacenter: Azure Edition – Gen 2**|
     |Nome de Usuário|**Aluno**|
-    |Senha|**Use sua senha pessoal criada no Laboratório 02 > Exercício 2 > Tarefa 1 > Etapa 3.**|
+    |Senha|**Use sua senha pessoal criada no Laboratório 02 > Exercício 2 > Tarefa 1 > Etapa 3.**|
     |Porta de entrada públicas|**Nenhuma**|
     |Já tem uma licença do Windows Server|**Não** selecionado|
 
@@ -387,7 +389,7 @@ Nesta tarefa, você criará duas máquinas virtuais, uma na sub-rede Privada e o
 
 13. No painel **Examinar + criar**, verifique se a validação foi bem-sucedida e clique em **Criar**.
 
-    >**Observação**: você pode passar para a próxima tarefa depois que a implantação da VM do Azure **myVMPrivate** for concluída.
+    >**Observação**: você pode passar para a próxima tarefa depois que a implantação da VM do Azure **myVMPublic** for concluída.
 
 #### Tarefa 7: testar a conexão de armazenamento da sub-rede privada para confirmar se o acesso é permitido
 
@@ -404,7 +406,7 @@ Nesta tarefa, você se conectará à máquina virtual myVMPrivate por meio da Á
     |Configuração|Valor|
     |---|---|
     |Nome de Usuário|**Aluno**|
-    |Senha|**Use sua senha pessoal criada no Laboratório 02 > Exercício 2 > Tarefa 1 > Etapa 3.**|
+    |Senha|**Use sua senha pessoal criada no Laboratório 02 > Exercício 2 > Tarefa 1 > Etapa 3.**|
      
 
     >**Observação**: aguarde até que a sessão da Área de Trabalho Remota seja aberta e o Gerenciador do Servidores seja carregado.
@@ -455,7 +457,7 @@ Nesta tarefa, você se conectará à máquina virtual myVMPrivate por meio da Á
     |Configuração|Valor|
     |---|---|
     |Nome de Usuário|**Aluno**|
-    |Senha|**Use sua senha pessoal criada no Laboratório 02 > Exercício 2 > Tarefa 1 > Etapa 3.**|
+    |Senha|**Use sua senha pessoal criada no Laboratório 02 > Exercício 2 > Tarefa 1 > Etapa 3.**|
 
 
     >**Observação**: aguarde até que a sessão da Área de Trabalho Remota seja aberta e o Gerenciador do Servidores seja carregado.
