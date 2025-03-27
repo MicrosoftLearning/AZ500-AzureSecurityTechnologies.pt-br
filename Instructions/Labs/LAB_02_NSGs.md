@@ -245,7 +245,7 @@ Nesta tarefa, você criará uma máquina virtual para usar como um servidor de g
    |Imagem|**Windows Server 2022 Datacenter: Azure Edition - x64 Gen2**|
    |Tamanho|**Standard D2s v3**|
    |Nome de Usuário|**Aluno**|
-   |Senha|**Use sua senha pessoal criada no Laboratório 02 > Exercício 2 > Tarefa 1 > Etapa 3.**|
+   |Senha|**Use sua senha pessoal criada no Laboratório 02 > Exercício 2 > Tarefa 1 > Etapa 3.**|
    |Porta de entrada públicas|**Nenhuma**|
    |Já tem uma licença do Windows Server|**Não**|
 
@@ -293,7 +293,7 @@ Nesta tarefa, você testará os filtros de tráfego de rede. Você deve poder ex
 
 2. No painel **myVMMgmt**, clique em **Conectar** e, no menu suspenso, clique em **RDP**. 
 
-3. Clique em **Baixar Arquivo RDP** e use-o para se conectar à VM do Azure **myVMMgmt** via Área de Trabalho Remota. Quando solicitado a autenticar, forneça as seguintes credenciais:
+3. Clique em **Baixar Arquivo RDP** e use-o para se conectar à VM do Azure **myVMMgmt** via Área de Trabalho Remota. Quando a autenticação for solicitada, forneça esta credenciais do Azure:
 
    |Configuração|Valor|
    |---|---|
