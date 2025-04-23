@@ -4,7 +4,7 @@ lab:
   module: Module 02 - Plan and implement security for Azure SQL Database and Azure SQL Managed Instance
 ---
 
-# Laboratório 05: Banco de Dados SQL do Microsoft Azure
+# Laboratório 05: Banco de Dados SQL do Microsoft Azure
 # Manual de laboratório do aluno
 
 ## Cenário do laboratório
