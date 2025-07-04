@@ -4,6 +4,7 @@ lab:
   module: Module 01 - Manage Identity and Access
 ---
 
+
 # Laboratório 01: Controle de acesso baseado em função
 # Manual de laboratório do aluno
 
