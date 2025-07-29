@@ -161,13 +161,14 @@ Nessa tarefa, você criará uma rota padrão para a sub-rede **Workload-SN**. Es
 
 10. No painel **Adicionar rota**, especifique as seguintes configurações:  
 
-   |Configuração|Valor|
-   |---|---|
-   |Nome da rota|**FW-DG**|
-   |Tipo de destino|**Endereço IP**|
-   |Intervalos de CIDR /endereço IP de destino|**0.0.0.0/0**
-   |Tipo do próximo salto|**Solução de virtualização**|
-   |Endereço do próximo salto|o endereço IP privado do firewall que você identificou na tarefa anterior|
+    |Configuração|Valor|
+    |---|---|
+    |Nome da rota|**FW-DG**|
+    |Tipo de destino|**Endereço IP**|
+    |Intervalos de CIDR /endereço IP de destino|**0.0.0.0/0**
+    |Tipo do próximo salto|**Solução de virtualização**|
+    |Endereço do próximo salto|o endereço IP privado do firewall que você identificou na tarefa anterior|
+
 
     >**Observação**: o Firewall do Azure é, na verdade, um serviço gerenciado, mas a solução de virtualização funciona nessa situação.
     
@@ -266,9 +267,9 @@ Nessa tarefa, você testará o firewall para confirmar se ele está funcionando 
 
 2. No painel **AZ500LAB08**, na lista de recursos, clique na máquina virtual **Srv-Jump**.
 
-3. No painel **Srv-Jump**, clique em **Conectar** e, no menu suspenso, clique em **RDP**. 
+3. Na folha **Srv-Jump**, clique em **Conectar** e, no menu suspenso, clique em **Conectar**. 
 
-4. Clique em **Baixar Arquivo RDP** e use-o para se conectar à VM do Azure **Srv-Jump** por meio da Área de Trabalho Remota. Quando solicitado a autenticar, forneça as seguintes credenciais:
+4. Baixe o arquivo RDP e use-o para se conectar à VM **Srv-Jump** do Azure por meio da Área de Trabalho Remota. Quando solicitado a autenticar, forneça as seguintes credenciais:
 
    |Configuração|Valor|
    |---|---|

@@ -242,6 +242,8 @@ Nesta tarefa, você criará uma máquina virtual para usar como um servidor de g
    |Grupo de recursos|**AZ500LAB07**|
    |Nome da máquina virtual|**myVMMgmt**|
    |Region|(EUA) Leste dos EUA|
+   |Opções de disponibilidade|**Nenhuma redundância de infraestrutura necessária**
+   |Tipo de segurança|**Standard**
    |Imagem|**Windows Server 2022 Datacenter: Azure Edition - x64 Gen2**|
    |Tamanho|**Standard D2s v3**|
    |Nome de Usuário|**Aluno**|
@@ -251,19 +253,19 @@ Nesta tarefa, você criará uma máquina virtual para usar como um servidor de g
 
     >**Observação**: para portas de entrada públicas, dependeremos do NSG pré-criado. 
 
-3. Clique em **Avançar: Discos >** e, na guia **Discos** do painel **Criar uma máquina virtual**, defina o **Tipo de disco do sistema operacional** para **HDD Standard** e clique em **Avançar: Rede >**.
+4. Clique em **Avançar: Discos >** e, na guia **Discos** do painel **Criar uma máquina virtual**, defina o **Tipo de disco do sistema operacional** para **HDD Standard** e clique em **Avançar: Rede >**.
 
-4. Na guia **Rede** do painel **Criar uma máquina virtual**, selecione a rede **myVirtualNetwork** criada anteriormente.
+5. Na guia **Rede** do painel **Criar uma máquina virtual**, selecione a rede **myVirtualNetwork** criada anteriormente.
 
-5. Em **Grupo de segurança de rede da NIC**, selecione **Nenhum**.
+6. Em **Grupo de segurança de rede da NIC**, selecione **Nenhum**.
 
-6. Clique em **Avançar: Gerenciamento >** e clique em **Avançar: Monitoramento >**. Na guia **Monitoramento** do painel **Criar uma máquina virtual**, verifique a seguinte configuração:
+7. Clique em **Avançar: Gerenciamento >** e clique em **Avançar: Monitoramento >**. Na guia **Monitoramento** do painel **Criar uma máquina virtual**, verifique a seguinte configuração:
 
    |Configuração|Valor|
    |---|---|
    |Diagnóstico de inicialização|**Habilitado com a conta de armazenamento gerenciada (recomendado)**|
 
-7. Clique em **Revisar + criar**, no painel **Revisar + criar**, verifique se a validação foi bem-sucedida e clique em **Criar**.
+8. Clique em **Revisar + criar**, no painel **Revisar + criar**, verifique se a validação foi bem-sucedida e clique em **Criar**.
 
     >**Observação**: aguarde até que ambas as máquinas virtuais sejam provisionadas antes de continuar. 
 
@@ -291,9 +293,9 @@ Nesta tarefa, você testará os filtros de tráfego de rede. Você deve poder ex
 
 1. Navegue de volta até o painel da Máquina virtual **myVMMgmt**.
 
-2. No painel **myVMMgmt**, clique em **Conectar** e, no menu suspenso, clique em **RDP**. 
+2. Na folha Visão geral da **myVMMgmt**, clique em **Conectar** e, no menu suspenso, clique em **Conectar**. 
 
-3. Clique em **Baixar Arquivo RDP** e use-o para se conectar à VM do Azure **myVMMgmt** via Área de Trabalho Remota. Quando a autenticação for solicitada, forneça esta credenciais do Azure:
+3. Baixe o arquivo RDP e use-o para se conectar à VM **myVMMgmt** do Azure por meio da Área de Trabalho Remota. Quando a autenticação for solicitada, forneça esta credenciais do Azure:
 
    |Configuração|Valor|
    |---|---|

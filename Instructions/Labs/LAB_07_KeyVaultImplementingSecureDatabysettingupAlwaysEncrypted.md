@@ -347,9 +347,9 @@ Nesta tarefa, você se conectará ao Banco de dados SQL com o SQL Server Managem
 
     >**Observação**: isso modifica as configurações de firewall do servidor, permitindo conexões com o banco de dados medical a partir do endereço IP público da VM do Azure implantado neste laboratório.
 
-4. Volte até a folha **az500-10-vm1**, clique em **Visão geral**, depois em **Conectar** e, no menu suspenso, selecione **RDP**. 
+4. Volte até a folha **az500-10-vm1**, clique em **Visão geral**, depois em **Conectar** e, no menu suspenso, clique e, **Conectar**. 
 
-5. Selecione **Baixar arquivo RDP** e use-o para se conectar à VM do Azure **az500-10-vm1** pela Área de Trabalho Remota. Quando a autenticação for solicitada, forneça as seguintes credenciais:
+5. Baixe o arquivo RDP e use-o para se conectar à VM do Azure **az500-10-vm1** por meio da Área de Trabalho Remota. Quando solicitado a autenticar, forneça as seguintes credenciais:
 
     |Configuração|Valor|
     |---|---|
