@@ -74,7 +74,6 @@ Nesta tarefa, você implantará uma VM do Azure, que instalará automaticamente 
    |Nome de Usuário|**Aluno**|
    |Senha|**Use sua senha pessoal criada no Laboratório 02 > Exercício 2 > Tarefa 1 > Etapa 3.**|
    
-   
     >**Observação**: embora seja possível alterar as credenciais administrativas usadas para fazer logon na máquina virtual, não é necessário.
 
     >**Observação**: para identificar as regiões do Azure onde você pode provisionar VMs do Azure, consulte [**https://azure.microsoft.com/en-us/regions/offers/**](https://azure.microsoft.com/en-us/regions/offers/)
@@ -84,6 +83,18 @@ Nesta tarefa, você implantará uma VM do Azure, que instalará automaticamente 
     >**Observação**: isso inicia a implantação da VM do Azure e do Banco de Dados SQL do Azure necessários para este laboratório. 
 
     >**Observação**: não espere a conclusão da implantação do modelo do ARM e passe para o próximo exercício. A implantação pode levar entre **20 – 25 minutos**. 
+
+#### Instalar o modelo personalizado do az500-10-DB.json
+
+1. Na caixa de texto ** Pesquisar recursos, serviços e documentos** na parte superior da página do portal do Azure, digite **Implantar um modelo personalizado** e pressione a tecla **Enter**.
+
+2. No painel **Implantação personalizada**, clique na opção **Criar seu próprio modelo no editor**.
+
+3. Na folha **Editar modelo**, clique em **Carregar arquivo**, localize o arquivo **\Allfiles\Labs\10\az-500-10_DB.json** e clique em **Abrir**.
+
+4. Verifique se está selecionado o Grupo de Recursos correto.
+
+5. Defina a **Senha de administrador** igual à senha usada para a etapa anterior.
 
 ### Exercício 2: configurar o recurso Key Vault com uma chave e um segredo
 
@@ -418,14 +429,35 @@ Nesta tarefa, você se conectará ao Banco de dados SQL com o SQL Server Managem
 
     >**Observação**: o subnó **Chaves do Always Encrypted** contém as subpastas **Chaves Mestras de Coluna** e **Chaves de Criptografia de Coluna**.
 
-
 ### Exercício 4: demonstrar o uso do Azure Key Vault na criptografia do banco de dados SQL do Azure
 
 Neste exercício, você realizará as seguintes tarefas:
 
-- Tarefa 1: executar um aplicativo controlado por dados para demonstrar o uso do Azure Key Vault na criptografia do banco de dados SQL do Azure
+- Tarefa 1: Instalar o Visual Studio 2022
+- Tarefa 2: Executar um aplicativo controlado por dados para demonstrar o uso do Azure Key Vault na criptografia do banco de dados SQL do Azure
 
-#### Tarefa 1: executar um aplicativo controlado por dados para demonstrar o uso do Azure Key Vault na criptografia do banco de dados SQL do Azure
+#### Tarefa 1: Instalar o Visual Studio 2022
+
+1. Alterne para a máquina virtual do Servidor se você já não estiver nela.
+
+2. Abra o Gerenciador de Servidor.
+
+3. Selecione Servidores Locais.
+
+4. Defina **Configuração de Segurança Aprimorada do IE** como **Desativado**.
+
+5. Abra o Navegador e ignore o aviso sobre o ESC do IE estar desativado.
+
+6. Ir para https://visualstudio.microsoft.com/downloads.
+
+7. Na caixa **Visual Studio 2022**, em **Comunidade**, selecione **Download gratuito**.
+
+8. Quando o download estiver concluído, selecione **Abrir Arquivo**.
+
+9. Selecione continuar para iniciar a instalação.
+  - A instalação leva cerca de 10 minutos
+
+#### Tarefa 2: Executar um aplicativo controlado por dados para demonstrar o uso do Azure Key Vault na criptografia do banco de dados SQL do Azure
 
 Você criará um aplicativo de console usando o Visual Studio para carregar dados nas colunas criptografadas e acessar esses dados com segurança usando uma cadeia de conexão que acessa a chave no Key Vault.
 
