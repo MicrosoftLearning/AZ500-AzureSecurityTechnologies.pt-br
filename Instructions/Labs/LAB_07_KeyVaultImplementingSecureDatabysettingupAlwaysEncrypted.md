@@ -30,7 +30,7 @@ Neste laboratório, você completará os seguintes exercícios:
 
 ## Diagrama do Key Vault
 
-![imagem](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/38c4ba6d-2fc7-45e5-b9a2-d5dbb4fbbcbc)
+![Diagrama mostrando o fluxo do processo das tarefas neste laboratório.](../media/key-vault-diagram.png)
 
 ## Instruções
 
@@ -145,7 +145,7 @@ Nesta tarefa, você criará um recurso do Azure Key Vault. Você também configu
     |Permissões de chave/Operações criptográficas|clique em **Assinar**, resultando em um total de **1 permissão** selecionada|
     |Permissões de segredo|clique em **Selecionar tudo**, resultando em um total de **7 permissões** selecionadas|
     |Permissões de certificado|clique em **Selecionar tudo**, resultando em um total de **15 permissões** selecionadas|
-    |Selecionar entidade de segurança|clique em **Nenhum selecionado**, na folha **Entidade de segurança**, selecione sua conta de usuário e clique em **Avançar**|
+    |Selecionar entidade de segurança|Na folha **Entidade de segurança**, selecione sua conta de usuário e clique em **Avançar**|
     |Aplicativo (opcional)|Clique em **Avançar**|
     |Examinar + criar|Clique em **Criar**|
     
