@@ -293,7 +293,7 @@ Nesta tarefa, você associará cada adaptador de rede de máquinas virtuais ao g
 
 6. No painel **myVMMgmt**, na seção **Rede**, clique em **Configurações de rede** e, no painel ** myVMMgmt\| Configurações de rede**, clique na guia **Grupos de segurança de aplicativos**.
 
-7. Clique em + **Adicionar grupos de segurança de aplicativos**, na lista **Grupo de segurança de aplicativos**, selecione **myAsgMgmtServers** e clique em **Salvar**.
+7. Clique em + **Adicionar grupos de segurança de aplicativos**, na lista **Grupo de segurança de aplicativos**, selecione **myAsgMgmtServers** e clique em **Adicionar**.
 
 #### Tarefa 4: testar a filtragem de tráfego de rede
 
