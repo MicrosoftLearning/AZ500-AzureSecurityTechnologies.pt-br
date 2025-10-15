@@ -27,7 +27,7 @@ Neste laboratório você realizará os seguintes exercícios:
 
 ## Diagrama do Firewall do Azure
 
-![imagem](https://user-images.githubusercontent.com/91347931/157529954-a1bc434b-2eca-41c1-b875-1f0c977d5e20.png)
+![Diagrama mostrando o fluxo do processo das tarefas neste laboratório.](../media/azure-firewall-diagram.png)
 
 ## Instruções
 

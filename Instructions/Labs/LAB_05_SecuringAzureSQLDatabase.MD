@@ -25,7 +25,7 @@ Neste laboratório você realizará os seguintes exercícios:
 
 ## Diagrama de proteção do Banco de Dados SQL do Azure
 
-![imagem](https://user-images.githubusercontent.com/91347931/157533836-7250fa58-a109-4882-a55b-d3fa3baf34ab.png)
+![Diagrama mostrando o fluxo do processo das tarefas neste laboratório.](../media/securing-azure-sql-database-diagram.png)
 
 ## Instruções
 
