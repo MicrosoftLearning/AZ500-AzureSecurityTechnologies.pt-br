@@ -30,7 +30,7 @@ Neste laboratório, você realizará os seguintes exercícios:
 
 ## Diagrama de arquitetura de controle de acesso baseado em função
 
-![imagem](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/506cde9c-5242-4438-a793-f88a5434a2b2)
+![Diagrama mostrando o layout do sistema para este laboratório e o fluxo do processo dos laboratórios](../media/role-based-access-control-architecture-diagram.png)
 
 ## Instruções
 
@@ -68,7 +68,7 @@ Nesta tarefa, você criará uma conta de usuário para Joseph Price.
 
 7. Clique em **Criar**.
 
-8. Atualize a folha **Usuários \| Todos os usuários** para verificar se o novo usuário foi criado em seu locatário do Microsoft Entra.
+8. Atualize a folha **Usuários | Todos os usuários** para verificar se o usuário foi criado em seu locatário do Microsoft Entra.
 
 #### Tarefa2: use o portal do Azure para criar um grupo de Administradores Seniores e adicionar a conta de usuário de Joseph Price ao grupo.
 

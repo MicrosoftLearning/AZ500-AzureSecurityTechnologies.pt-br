@@ -53,7 +53,7 @@ Neste laboratório, você completará os seguintes exercícios:
 
    - Na guia **configurada**, clique com o botão direito do mouse na VM à qual você deseja adicionar uma porta e selecione Editar.
 
-   ![imagem](https://github.com/user-attachments/assets/aa4ded55-c5b1-4d40-b5a0-a4c33b9eb81b)
+   ![Captura da tela de configuração de acesso just-in-time para a VM.](../media/just-in-time-vm-access.png)
    
    - Em **Configuração de acesso JIT à VM**, você pode editar as configurações existentes de uma porta já protegida ou pode adicionar uma nova porta personalizada.
    - Ao terminar de editar as portas, selecione **Salvar**.   
@@ -72,6 +72,6 @@ Neste laboratório, você completará os seguintes exercícios:
     
         - Se o JIT estiver habilitado, selecione **Solicitar acesso** para passar uma solicitação de acesso com o IP solicitante, o intervalo de tempo e as portas que foram configuradas para essa VM.
     
-   ![imagem](https://github.com/user-attachments/assets/f5d0b67c-7731-4261-b0eb-a56c505dadd4)
+   ![Captura de tela de Conectar a uma máquina virtual usando JIT.](../media/vm-connection-for-vm1.png)
 
 > **Resultados**: você explorou vários métodos sobre como habilitar o JIT em suas VMs e como solicitar acesso a VMs que têm o JIT habilitado no Microsoft Defender para Nuvem.

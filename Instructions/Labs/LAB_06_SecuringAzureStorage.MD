@@ -25,7 +25,7 @@ Neste laboratório você realizará os seguintes exercícios:
 
 ## Diagrama de pontos de extremidade de serviço e armazenamento seguro
 
-![imagem](https://user-images.githubusercontent.com/91347931/157534883-29664a05-85d1-4c70-99a7-f16d2360755d.png)
+![Diagrama mostrando o fluxo do processo das tarefas no laboratório.](../media/service-endpoints-and-securing-storage-diagram.png)
 
 ## Instruções
 
