@@ -168,7 +168,7 @@ Nesta tarefa, você criará uma regra de coleta de dados.
     |Tipo de plataforma|**Windows**|
     |Ponto de Extremidade de Coleta de Dados|*Deixar em branco*|
 
-    ![imagem](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/9b58c4ce-b7a8-4acf-8289-d95b270a6083)
+    ![Captura de tela da guia Noções básicas da tela Criar Regra de Coleta de Dados.](../media/crete-a-data-collection-rule-basics-tab.png)
 
 
 5. Clique no botão **Avançar: recursos >** para prosseguir.
@@ -191,7 +191,7 @@ Nesta tarefa, você criará uma regra de coleta de dados.
     |Disco|60|
     |Rede|60|
 
-   ![imagem](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/a24e44ad-1d10-4533-80e2-bae1b3f6564d)
+   ![Captura de tela da guia Coletar e Entregar da Regra de Coleta de Dados.](../media/crete-a-data-collection-rule-collectanddeliver-tab.png)
 
 11. Clique no botão **Avançar: Destino >** para prosseguir.
   
@@ -199,11 +199,11 @@ Nesta tarefa, você criará uma regra de coleta de dados.
 
 13. Selecione **Adicionar fonte de dados** na parte inferior da página.
     
-    ![imagem](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/964091e7-bbbc-4ca8-8383-bb2871a1e7f0)
+    ![Captura de tela da página Adicionar uma Fonte de Dados na página Regra de Coleta de Dados.](../media/crete-a-data-collection-rule-add-datasource.png)
 
 14. Clique em **Revisar + Criar**.
 
-    ![imagem](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/50dd8407-a106-4540-9e14-ae40a3c04830)
+    ![Captura de tela da guia Examinar + Criar do assistente de Regra de Coleta de Dados.](../media/crete-a-data-collection-rule-reviewcreate-tab.png)
 
 15. Clique em **Criar**.
 

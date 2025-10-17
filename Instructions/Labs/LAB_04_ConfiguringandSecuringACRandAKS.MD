@@ -76,18 +76,24 @@ Nesta tarefa, você criará um grupo de recursos do laboratório em um Registro 
     az group list --query "[?name=='AZ500LAB09']" -o table
     ```
 
-6. Na sessão Bash no painel do Cloud Shell, execute o seguinte para criar uma instância do Registro de Contêiner do Azure (ACR) (O nome do ACR deve ser globalmente único): 
+6. Na sessão do Bash, execute os comandos a seguir para registrar o **Registro de Contêiner** no ambiente de laboratório.
+
+   ```sh
+   az provider register --namespace Microsoft.Kubernetes
+   az provider register --namespace Microsoft.KubernetesConfiguration
+   az provider register --namespace Microsoft.OperationsManagement
+   az provider register --namespace Microsoft.OperationalInsights
+   az provider register --namespace Microsoft.ContainerService
+   az provider register --namespace Microsoft.ContainerRegistry
+   ```
+
+7. Na sessão Bash no painel do Cloud Shell, execute o seguinte para criar uma instância do Registro de Contêiner do Azure (ACR) (O nome do ACR deve ser globalmente único): 
 
     ```sh
     az acr create --resource-group AZ500LAB09 --name az500$RANDOM$RANDOM --sku Basic
     ```
-    > **Observação** registre o provedor de recursos Registro de Contêiner do Azure. Se você encontrar um erro ao executar `az acr create`, é provável que o serviço **Registro de Contêiner do Azure** ainda não tenha sido registrado para sua assinatura. Para corrigir isso, você pode registrar o serviço e criar seu registro em um comando:
-    
-    > ```sh
-    > az provider register --namespace Microsoft.ContainerRegistry
-    > ```
 
-7. Na sessão Bash no painel do Cloud Shell, execute o seguinte para confirmar que o novo ACR foi criado:
+8. Na sessão Bash no painel do Cloud Shell, execute o seguinte para confirmar que o novo ACR foi criado:
 
     ```sh
     az acr list --resource-group AZ500LAB09
@@ -135,7 +141,7 @@ Nesta tarefa, você criará um Dockerfile, criará uma imagem do Dockerfile e a 
 
 Nesta tarefa, você criará um Serviço de Kubernetes do Azure e analisará os recursos implantados. 
 
-1. Na caixa de texto **Pesquisar recursos, serviços e documentos** na parte superior da página do portal do Azure, digite **Serviços de Kubernetes** e pressione a tecla **Enter**.
+1. No portal do Azure, na caixa de texto **Pesquisar recursos, serviços e documentos** na parte superior da página do portal do Azure, digite +++Serviços Kubernetes+++ e pressione a tecla **Enter**.
 
 2. No painel **Serviços de Kubernetes**, selecione  **+ Criar** e, no menu suspenso, clique em **+ Criar um cluster de Kubernetes**
 
@@ -143,32 +149,45 @@ Nesta tarefa, você criará um Serviço de Kubernetes do Azure e analisará os r
 
     |Configuração|Valor|
     |----|----|
-    |Assinatura|o nome da assinatura do Azure que você está usando neste laboratório|
-    |Grupo de recursos|**AZ500LAB09**|
-    |Nome do cluster do Kubernetes|**MyKubernetesCluster**|
-    |Região|**(EUA) Leste dos EUA**|
-    |Zonas de disponibilidade |**Nenhuma**|
-    |Método de dimensionamento|**Manual**|
-    |Contagem de nós|**1**|
+    | Assinatura | *Use o nome da assinatura do Azure que você está usando neste laboratório* |
+    | Grupo de recursos | **AZ500LAB09** |
+    | Configuração predefinida do cluster | **Desenvolvimento/Teste** |
+    | Nome do cluster do Kubernetes | +++MyKubernetesCluster+++ |
+    | Region | **(EUA) Leste dos EUA** |
+    | Gerenciador de frota | **Nenhuma** |
+    | Zonas de disponibilidade | **Nenhuma** |
+    | Tipo de preço do AKS | **Gratuito** |
+    | Habilitar suporte de longo prazo | **Desmarcado** |
+    | Versão do Kubernetes | *Usar padrão* |
+    | Atualização automática | *Mantenha o padrão* |
+    | Tipo de canal de segurança do nó | *Mantenha o padrão* |
+    | Autenticação e autorização | **Contas locais com o RBAC do Kubernetes** |
 
-4. Clique em **Avançar: Pools de Nós >** e, na guia **Pools de Nós** do painel **Criar cluster de Kubernetes**, especifique as seguintes configurações (deixe outras com os valores padrão):
+4. Clique em **Avançar**; na guia **Pools de Nós** do painel **Criar cluster do Kubernetes**, especifique as seguintes configurações (deixe outras com os valores padrão):
 
     |Configuração|Valor|
     |----|----|
-    |Habilitar nós virtuais|caixa de seleção desmarcada|
-    
-5. Clique em **Avançar: Acesso >**, na guia **Acesso** do painel **Criar cluster de Kubernetes**, aceite os padrões e clique em **Avançar: Rede >**. 
+    | Habilitar o provisionamento automático de nós | **Desmarque a caixa** |
+    | Habilitar nós virtuais | **Desmarque a caixa** |
+    | Outros valores | *Mantenha os padrões* |
+
+5. Clique em **Avançar** para acessar a **Rede**. 
+
+  >OBSERVAÇÃO – você receberá um pop-up informando que uma **Recomendação** está disponível para o tamanho da VM.  **Aceite a recomendação** para seguir em frente.
 
 6. Na guia **Rede** do painel **Criar cluster de Kubernetes**, especifique as seguintes configurações (deixe outras com os valores padrão):
 
     |Configuração|Valor|
     |----|----|
-    |Configuração de rede|**Sobreposição de CNI do Azure**|
-    |Prefixo do nome DNS|**Deixe o valor padrão**|
+    | Habilitar o cluster privado | **Desmarcado** |
+    | Definir os intervalos de IP autorizados | **Desmarcado** |
+    | Configuração de rede | **Sobreposição de CNI do Azure** |
+    | Prefixo do nome DNS | **Deixe o valor padrão** |
+    | Política de rede | **Nenhuma** |
 
     >**Observação**: o AKS pode ser configurado como um cluster privado. Isso atribui um IP privado ao servidor da API para garantir que o tráfego de rede entre seu servidor da API e seus pools de nós permaneça somente na rede privada. Para obter mais informações, confira a página [Criar um cluster privado do Serviço de Kubernetes do Azure](https://docs.microsoft.com/en-us/azure/aks/private-clusters).
 
-7. Clique em **Avançar: Integrações >** e, na guia **Integrações** do painel **Criar cluster do Kubernetes**, defina **Monitoramento de contêiner** como **Desativado**. 
+7. Clique em **Avançar** e, na guia **Integrações** da página **Criar cluster do Kubernetes**, deixe **Todos os valores como padrão**. 
 
     >**Observação**: em cenários de produção, convém ativar o monitoramento. O monitoramento é desativado neste caso, uma vez que não é coberto no laboratório. 
 

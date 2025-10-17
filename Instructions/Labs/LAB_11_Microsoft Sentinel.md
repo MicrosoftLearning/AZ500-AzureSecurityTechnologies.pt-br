@@ -27,7 +27,7 @@ Neste laboratório você realizará os seguintes exercícios:
 
 ## Diagrama do Microsoft Sentinel
 
-![imagem](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/509aa70d-de11-4470-a289-877fbfecbc00)
+![Diagrama do fluxo do processo das tarefas neste laboratório.](../media/microsoft-sentinel-diagram.png)
 
 ## Instruções
 

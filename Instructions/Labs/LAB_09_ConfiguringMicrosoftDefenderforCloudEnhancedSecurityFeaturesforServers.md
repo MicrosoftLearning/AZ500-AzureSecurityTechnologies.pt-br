@@ -26,7 +26,7 @@ Como engenheiro de segurança do Azure para uma empresa global de comércio elet
 
 2. Na folha **Gerenciamento** do **Microsoft Defender para Nuvem**, acesse **Configurações de ambiente**. Expanda as pastas de configurações do ambiente até que a seção **assinatura** seja exibida e clique na **assinatura** para exibir os detalhes.
 
-   ![imagem](https://github.com/user-attachments/assets/3b25dd82-e09e-4f8a-b85e-c9bc6c4bd488)
+   ![Captura de tela das Configurações de Ambiente do Microsoft Defender para Nuvem](../media/defender-for-cloud-environment-settings.png)
    
 3. Na folha **Configurações**, em **Planos do Defender**, expanda **CWP (Proteção de Carga de Trabalho na Nuvem)**.
 
@@ -36,6 +36,6 @@ Como engenheiro de segurança do Azure para uma empresa global de comércio elet
 
    Observação: habilitar o plano de Servidores de CWP (Proteção de Carga de Trabalho na Nuvem) de Desativado para Ativado habilita o Plano 2 do Microsoft Defender para servidores.
  
-   ![imagem](https://github.com/user-attachments/assets/de434a75-345a-4023-83f1-fa53fcb5f288)
+   ![Captura de tela da página de seleção do plano Microsoft Defender para Nuvem.](../media/defender-for-cloud-plan-selection.png)
    
 > **Resultados**: você habilitou o Plano 2 do Microsoft Defender para servidores na sua assinatura.
