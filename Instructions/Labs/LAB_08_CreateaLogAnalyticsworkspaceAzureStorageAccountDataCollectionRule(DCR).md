@@ -66,7 +66,7 @@ Neste exercício, você realizará as seguintes tarefas:
 5. Na sessão do PowerShell no painel do Cloud Shell, execute o seguinte para criar uma nova máquina virtual do Azure. 
 
     ```powershell
-    New-AzVm -ResourceGroupName "AZ500LAB131415" -Name "myVM" -Location 'EastUS' -VirtualNetworkName "myVnet" -SubnetName "mySubnet" -SecurityGroupName   "myNetworkSecurityGroup" -PublicIpAddressName "myPublicIpAddress" -PublicIpSku Standard -OpenPorts 80,3389 -Size Standard_D2s_v3 
+    New-AzVm -ResourceGroupName "AZ500LAB131415" -Name "myVM" -Location 'EastUS' -VirtualNetworkName "myVnet" -SubnetName "mySubnet" -SecurityGroupName   "myNetworkSecurityGroup" -PublicIpAddressName "myPublicIpAddress" -PublicIpSku Standard -OpenPorts 80,3389 -Size Standard_D2_v4 
     ```
     
 6.  Quando solicitado a fornecer credenciais:
@@ -106,8 +106,8 @@ Nesta tarefa, você criará um workspace do Log Analytics.
     |---|---|
     |Assinatura|o nome da assinatura do Azure que você está usando neste laboratório|
     |Grupo de recursos|**AZ500LAB131415**|
-    |Nome|qualquer nome globalmente exclusivo e válido|
-    |Região|**Leste dos EUA**|
+    |Nome|**lgawIgnite**|
+    |Region|**Leste dos EUA**|
 
 4. Selecione **Examinar + criar**.
 
@@ -133,9 +133,10 @@ Nesta tarefa, você criará uma conta de armazenamento.
     |---|---|
     |Assinatura|o nome da assinatura do Azure que você está usando neste laboratório|
     |Grupo de recursos|**AZ500LAB131415**|
-    **Detalhes da instância** | Nome da conta de armazenamento | qualquer nome globalmente exclusivo entre 3 e 24 de comprimento, consistindo em letras e dígitos|  |Região|**(EUA) Leste dos EUA**|
+    **Detalhes da instância** |Nome da conta de armazenamento|**strgactignite**|
+    |Região|**(EUA) EastUS**|
     |Serviço primário|**Armazenamento de Blobs do Azure ou Azure Data Lake Storage Gen 2**|
-    |Desempenho|**Standard (conta v2 de uso geral)**|
+    |Desempenho|**Padrão (conta de finalidade geral v2)**|
     |Redundância|**Armazenamento com redundância local (LRS)**|
 
 5. Na guia **Noções básicas** da folha **Criar conta de armazenamento**, clique em **Revisar + criar**. Depois que o processo de validação for concluído, clique em **Criar**.
