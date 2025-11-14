@@ -36,7 +36,7 @@ Neste laboratório, você realizará os seguintes exercícios:
 
 ### Tempo estimado: 20 minutos
 
-> Para todos os recursos deste laboratório, estamos usando a região **Leste (EUA)**. Verifique com seu instrutor se esta é a região a ser usada para sua aula. 
+> Para todos os recursos deste laboratório, estamos usando a região **Leste (EUA)**. Verifique com seu instrutor se esta é a região para ser usada na sua aula. 
 
 Neste exercício, você realizará as seguintes tarefas:
 
@@ -277,7 +277,7 @@ Nesta tarefa, você criará uma máquina virtual para usar como um servidor de g
 
     >**Observação**: aguarde até que ambas as máquinas virtuais sejam provisionadas antes de continuar. 
 
-#### Tarefa 3: associar cada adaptador de rede de máquinas virtuais ao seu grupo de segurança de aplicativo.
+#### Tarefa 3: Associar cada adaptador de rede de máquinas virtual ao seu grupo de segurança de aplicativo.
 
 Nesta tarefa, você associará cada adaptador de rede de máquinas virtuais ao grupo de segurança de aplicativo correspondente. A interface da máquina virtual myVMWeb será associada ao ASG myAsgWebServers. A interface da máquina virtual myVMMgmt será associada ao ASG myAsgMgmtServers. 
 

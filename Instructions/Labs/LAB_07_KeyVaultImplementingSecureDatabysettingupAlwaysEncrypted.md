@@ -98,7 +98,7 @@ Nesta tarefa, você implantará uma VM do Azure, que instalará automaticamente 
 
 ### Exercício 2: configurar o recurso Key Vault com uma chave e um segredo
 
->**Observação**: para todos os recursos neste laboratório, estamos usando a região **Leste (EUA)**. Confirme com seu instrutor se esta é a região a ser usada para sua aula. 
+>**Observação**: para todos os recursos neste laboratório, estamos usando a região **Leste (EUA)**. Verifique com seu instrutor se esta é a região para ser usada na sua aula. 
 
 Neste exercício, você realizará as seguintes tarefas:
 
@@ -360,7 +360,7 @@ Nesta tarefa, você se conectará ao Banco de dados SQL com o SQL Server Managem
 
 4. Volte até a folha **az500-10-vm1**, clique em **Visão geral**, depois em **Conectar** e, no menu suspenso, clique e, **Conectar**. 
 
-5. Baixe o arquivo RDP e use-o para se conectar à VM do Azure **az500-10-vm1** por meio da Área de Trabalho Remota. Quando solicitado a autenticar, forneça as seguintes credenciais:
+5. Baixe o arquivo RDP e use-o para se conectar à VM do Azure **az500-10-vm1** por meio da Área de Trabalho Remota. Quando a autenticação for solicitada, forneça esta credenciais do Azure:
 
     |Configuração|Valor|
     |---|---|
@@ -415,7 +415,7 @@ Nesta tarefa, você se conectará ao Banco de dados SQL com o SQL Server Managem
 
 15. Na página **Seleção de coluna**, selecione as colunas **SSN** e **Data de nascimento**, defina o **Tipo de criptografia** da coluna **SSN** como **Determinístico** e da coluna **Data de nascimento** como **Randomizado** e clique em **Avançar**.
 
-    >**Observação**: ao executar a criptografia, se algum erro gerado como **Uma exceção foi gerada pelo destino de uma invocação** relacionada a **Rotary(Microsoft.SQLServer.Management.ServiceManagement)**, verifique se os valores da **Permissão de chave** de **Operações de Política de Rotação** estão **desmarcados**. Se não estiver no portal do Azure, navegue até as **Key Vault** >> **Políticas de acesso** >> **Permissões de chave** >> Desmarque todos os valores em **Operações de política de rotação** >> Em **Operações de chave privilegiada** >> Desmarque **Liberar**.
+    >**Observação**: ao executar a criptografia, se algum erro gerado como **Uma exceção foi gerada pelo destino de uma invocação** relacionado a **Rotary(Microsoft.SQLServer.Management.ServiceManagement)**, verifique se os valores da **Permissão de Chave** das **Operações de Política de Rotação** estão **desmarcados**. Se não estiver no portal do Azure, navegue até as **Cofre de Chaves** >> **Políticas de Acesso** >> **Permissões de Chave** >> desmarque todos os valores em **Operações de Política de Rotação** >> em **Operações de Chave Privilegiada** >> desmarque **Liberar**.
 
 16. Na página **Configuração de chave mestra**, selecione **Azure Key Vault**, clique em **Entrar** quando solicitado, autentique-se usando a mesma conta de usuário usada para provisionar a instância do Azure Key Vault anteriormente neste laboratório, verifique se esse Key Vault aparece na lista suspensa **Selecionar um Azure Key Vault** e clique em **Avançar**.
 
