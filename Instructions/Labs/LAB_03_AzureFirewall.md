@@ -39,7 +39,7 @@ Neste laboratório você realizará os seguintes exercícios:
 
 ### Tempo estimado: 40 minutos
 
-> Para todos os recursos deste laboratório, estamos usando a região **Leste (EUA)**. Verifique com seu instrutor se esta é a região a ser usada para sua aula. 
+> Para todos os recursos deste laboratório, estamos usando a região **Leste (EUA)**. Verifique com seu instrutor se esta é a região para ser usada na sua aula. 
 
 Neste exercício, você realizará as seguintes tarefas:
 
@@ -105,7 +105,7 @@ Nesta tarefa, você implantará o Firewall do Azure na rede virtual.
    |Gerenciamento do firewall|**Use regras de Firewall (clássicas) para gerenciar este firewall**|
    |Escolher uma rede virtual|clique na opção **Usar existente** e, na lista suspensa, selecione **Test-FW-VN**|
    |NIC de Gerenciamento do Firewall|Para desativar esse recurso, **desmarque** a opção **Ativar NIC de gerenciamento de firewall**.|
-   |Endereço IP público|clique em **Adicionar novo** e digite o nome **TEST-FW-PIP** e clique em **OK**|
+   |Endereço IP público|clique em **Adicionar nova**, digite o nome **TEST-FW-PIP** e clique em **OK**|
 
 5. Clique em **Revisar + criar** e em **Criar**. 
 
@@ -269,7 +269,7 @@ Nessa tarefa, você testará o firewall para confirmar se ele está funcionando 
 
 3. Na folha **Srv-Jump**, clique em **Conectar** e, no menu suspenso, clique em **Conectar**. 
 
-4. Baixe o arquivo RDP e use-o para se conectar à VM **Srv-Jump** do Azure por meio da Área de Trabalho Remota. Quando solicitado a autenticar, forneça as seguintes credenciais:
+4. Baixe o arquivo RDP e use-o para se conectar à VM **Srv-Jump** do Azure por meio da Área de Trabalho Remota. Quando a autenticação for solicitada, forneça esta credenciais do Azure:
 
    |Configuração|Valor|
    |---|---|

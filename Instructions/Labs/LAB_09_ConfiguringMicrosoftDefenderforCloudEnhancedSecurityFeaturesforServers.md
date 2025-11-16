@@ -16,7 +16,7 @@ Como engenheiro de segurança do Azure para uma empresa global de comércio elet
 
 - Configurar recursos de segurança aprimorada do Microsoft Defender para Nuvem para servidores
   
-- Examine os recursos de segurança aprimorados do Plano 2 do Microsoft Defender para Servidores
+- Examine os recursos de segurança aprimorados do Plano 2 do Microsoft Defender para servidores
 
 ## Instruções para o exercício
 

@@ -401,7 +401,7 @@ Nesta tarefa, você se conectará à máquina virtual myVMPrivate por meio da Á
 
 3. Na folha **myVMPrivate**, clique em **Conectar** e, no menu suspenso, clique em **Conectar**. 
 
-4. Baixe o arquivo RDP e use-o para se conectar à VM **myVMPrivate** do Azure por meio da Área de Trabalho Remota. Quando solicitado a autenticar, forneça as seguintes credenciais:
+4. Baixe o arquivo RDP e use-o para se conectar à VM **myVMPrivate** do Azure por meio da Área de Trabalho Remota. Quando a autenticação for solicitada, forneça esta credenciais do Azure:
 
     |Configuração|Valor|
     |---|---|
@@ -452,7 +452,7 @@ Nesta tarefa, você se conectará à máquina virtual myVMPrivate por meio da Á
 
 3. Na folha **myVMPublic**, clique em **Conectar** e, no menu suspenso, clique em **Conectar**. 
 
-4. Clique em **Conectar via RDP** e use essa opção para se conectar à VM **myVMPublic** do Azure por meio da Área de Trabalho Remota. Quando solicitado a autenticar, forneça as seguintes credenciais:
+4. Clique em **Conectar via RDP** e use essa opção para se conectar à VM **myVMPublic** do Azure por meio da Área de Trabalho Remota. Quando a autenticação for solicitada, forneça esta credenciais do Azure:
 
     |Configuração|Valor|
     |---|---|

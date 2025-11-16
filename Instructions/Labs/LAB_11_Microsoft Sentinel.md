@@ -84,11 +84,11 @@ Nesta tarefa, você configurará o Sentinel para usar o conector de dados de Ati
 
 7. Na etapa 2 **Conectar suas assinaturas por meio do novo pipeline de configurações de diagnóstico**, revise as instruções "Iniciar assistente de Atribuição do Azure Policy e siga as etapas" e clique em **Iniciar assistente de Atribuição do Azure Policy\>**.
 
-8. Na guia **Configurar os logs de atividade do Azure para transmitir para o espaço de trabalho do Log Analytics específico** (página Atribuir política) **Noções Básicas**, clique no botão **Escopo da elipse (...)** Na página **Escopo**, escolha sua assinatura na lista suspensa de assinaturas e clique no botão **Selecionar** na parte inferior da página.
+8. Na guia **Configurar logs de Atividade do Azure para transmitir para o workspace do Log Analytics especificado** (página Atribuir Política), na guia **Básico**, clique no botão de **Reticências de escopo (...)**. Na página **Escopo**, escolha sua assinatura na lista suspensa de assinaturas e clique no botão **Selecionar** na parte inferior da página.
 
     >**Observação**: *não* escolha um Grupo de Recursos
 
-9. Clique no botão **Avançar** na parte inferior da guia **Noções Básicas** duas vezes para prosseguir para a guia **Parâmetros**. Na guia **Parâmetros**, clique no botão **Elipse (...) do workspace do Log Analytics principal**. Na página **Workspace do Log Analytics Principal**, verifique se sua assinatura está selecionada e use a lista suspensa de **workspaces** para selecionar o workspace do Log Analytics que você está usando no Sentinel. Ao clicar no botão **Selecionar** na parte inferior da página.
+9. Clique no botão **Avançar** na parte inferior da guia **Básico** duas vezes para prosseguir para a guia **Parâmetros**. Na guia **Parâmetros**, clique no botão de **Reticências do workspace do Log Analytics primário (...)**. Na página **Workspace do Log Analytics Principal**, verifique se sua assinatura está selecionada e use a lista suspensa de **workspaces** para selecionar o workspace do Log Analytics que você está usando no Sentinel. Ao clicar no botão **Selecionar** na parte inferior da página.
 
 10. Clique no botão **Avançar** na parte inferior da guia **Parâmetros** para prosseguir para a guia **Remediação**. Na guia **Remediação**, marque a caixa de seleção **Criar uma tarefa de correção**. Isso habilitará a opção "Configurar logs de atividade do Azure para transmitir para o workspace especificado do Log Analytics" na lista suspensa **Política para correção**. Na lista suspensa **Local de identidade atribuído ao sistema**, selecione a região (Leste dos EUA, por exemplo) selecionada anteriormente para seu workspace do Log Analytics.
 
@@ -228,7 +228,7 @@ Nesta tarefa, você criará um guia estratégico. Um guia estratégico de segura
 
 14. Na guia **Resposta automatizada** do painel **Assistente de regra analítica – Crie uma nova Regra agendada**, clique em **Avançar: Revisar e criar >** e clique em **Salvar**
 
-    >**Observação**: agora você tem uma nova regra ativa chamada **Demonstração de guia estratégico**. Se ocorrer um evento identificado pela lógica rue, ele resultará em um alerta de gravidade média, que gerará um incidente correspondente.
+    >**Observação**: agora você tem uma nova regra ativa chamada **Demonstração de guia estratégico**. Se ocorrer um evento identificado pela lógica da regra, isso resultará em um alerta de gravidade média, que gerará um incidente correspondente.
 
 #### Tarefa 6: invocar um incidente e analisar as ações associadas.
 
@@ -248,7 +248,7 @@ Nesta tarefa, você criará um guia estratégico. Um guia estratégico de segura
 
 6. Navegue até o painel **Log de atividades**, observe uma entrada **Excluir políticas de acesso à rede JIT**. 
 
-    >**Observação**: isso pode levar alguns minutos para aparecer. **Atualize** a página se ela não aparecer.
+    >**Observação**: isso pode levar alguns minutos para aparecer. Atualize a página se ela não aparecer.
 
 7. No portal do Azure, navegue de volta para a aba **Visão geral** do Microsoft Sentinel\|.
 
@@ -262,7 +262,7 @@ Nesta tarefa, você criará um guia estratégico. Um guia estratégico de segura
 
     >**Observação**: pode levar até 5 minutos para que o incidente apareça no painel **Incidentes\| do Microsoft Sentinel**. 
 
-    >**Observação**: revise o painel **Livro estratégico do Microsoft Sentinel\|**. Lá você vai encontrar a contagem de execuções bem-sucedidas e com falha.
+    >**Observação**: revise o painel **Livro estratégico do Microsoft Sentinel\|**. Nele, você encontrará a contagem de execuções bem-sucedidas e com falha.
 
     >**Observação**: você tem a opção de atribuir um nível de gravidade e status diferentes a um incidente.
 

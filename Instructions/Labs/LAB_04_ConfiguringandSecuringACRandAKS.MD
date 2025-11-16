@@ -39,7 +39,7 @@ Neste laboratório você realizará os seguintes exercícios:
 
 ### Tempo estimado: 45 minutos
 
-> Para todos os recursos deste laboratório, estamos usando a região **Leste (EUA)**. Verifique com seu instrutor se esta é a região a ser usada para sua aula. 
+> Para todos os recursos deste laboratório, estamos usando a região **Leste (EUA)**. Verifique com seu instrutor se esta é a região para ser usada na sua aula. 
 
 Neste exercício, você realizará as seguintes tarefas:
 
@@ -54,7 +54,7 @@ Neste exercício, você realizará as seguintes tarefas:
 
 #### Tarefa 1: criar um Registro de Contêiner do Azure
 
-Nesta tarefa, você criará um grupo de recursos do laboratório em um Registro de Contêiner do Azure
+Nesta tarefa, você criará um grupo de recursos do laboratório em um Registro de Contêiner do Azure.
 
 1. Entre no portal do Azure **`https://portal.azure.com/`**.
 

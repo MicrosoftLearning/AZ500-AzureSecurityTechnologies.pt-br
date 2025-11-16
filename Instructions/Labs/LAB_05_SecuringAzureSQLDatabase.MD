@@ -166,7 +166,7 @@ Nesta tarefa, você configurará primeiro a auditoria no nível do servidor e, e
     >**Observação**: as auditorias podem ser gravadas em uma conta de armazenamento do Azure, em um Workspace do Log Analytics ou no Hub de Eventos. Você pode configurar qualquer combinação destas opções.
 
     >**Observação**: se a auditoria baseada em armazenamento estiver habilitada no servidor, ela sempre se aplicará ao banco de dados, independentemente das configurações de banco de dados.
-13. Na página Visão geral do banco de dados SQL no portal do Azure, selecione **Editor de Consultas (versão prévia)** no menu à esquerda. Tente entrar, você talvez falhe na senha, regra de firewall para o seu endereço IP, tudo é auditado. Tente também fazer login com êxito, execute a consulta e você poderá encontrar mais detalhes nos logs de auditoria
+13. Na página Visão geral do banco de dados SQL no portal do Azure, selecione **Editor de Consultas (versão prévia)** no menu à esquerda. Tente entrar, você talvez falhe na senha, regra de firewall para o seu endereço IP, tudo é auditado. Tente o logon bem-sucedido também, execute a consulta e você poderá encontrar mais detalhes nos logs de auditoria
 
 14. volte para o BD, Auditoria e clique em **Exibir logs de auditoria**.
 
